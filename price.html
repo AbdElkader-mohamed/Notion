@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion</title>
+
+  <link rel="shortcut icon" href="./images/logo/logo.svg" type="image/x-icon">
+
+  <!-- start main files  -->
+
+  <!-- Bootstrap 5  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.rtl.min.css"/>
+
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css" />
+
+  <!-- end main fils  -->
+
+  <!-- main file -->
+  <link rel="stylesheet" href="./css/main-rtl.css">
+</head>
+<body >
+
+<!-- start header  -->
+<header class="header ">
+  <div class="container accordion-body head">
+    <div class="header__wrapper">
+      <nav>
+        <ul class="header__wrapper__list" >
+          <li>
+            <button type="button" class=" btn nav-toggle  ">
+              <i class="bi bi-list"></i>
+            </button>
+          </li>
+          <li class="header__wrapper__list__nav-item header__wrapper__list__nav-item--logo">
+            <a href="./user.html" class="nav-link"><img src="./images/user.png" class="img-fluid" alt="user"></a>
+          </li>
+          <li class="header__wrapper__list__nav-item header__wrapper__list__nav-item--cart">
+            <a href="./shopping-cart.html" class="nav-link"><img src="./images/icons/li_shopping-cart.svg" class="img-fluid" alt="li_shopping-cart"></a>
+            <span>1</span>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="./index.html" class="nav-link">الرئيسية</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="about.html" class="nav-link">من نحن</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="shop.html" class="nav-link">المتجر</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="projects.html" class="nav-link">مشاريعنا</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="services.html" class="nav-link">خدماتنا </a>
+          </li>
+          <ul class="header__wrapper__list header__wrapper__list--slice" >
+
+          <li class="header__wrapper__list__nav-item">
+            <a href="projects.html" class="nav-link">مشاريعنا</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="services.html" class="nav-link">خدماتنا </a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="jop.html" class="nav-link">التوظيف</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="price.html" class="nav-link active">عرض السعر</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="contact.html" class="nav-link">تواصل معنا</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="./login.html" class="nav-link">تسجيل الدخول</a>
+          </li>
+          </ul>
+          <li class="header__wrapper__list__nav-item">
+            <a href="./price-en.html" class="nav-link">EN</a>
+          </li>
+        </ul>
+      </nav>
+      <svg class="main-border" xmlns="http://www.w3.org/2000/svg" width="1440" height="6" viewBox="0 0 1440 6" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6501 1.9328C61.6946 1.50709 56.086 0.921754 94.9148 0.682297C124.899 0.496052 132.881 0.389627 163.081 0.256595C196.733 0.070351 230.384 0.256595 264.036 0.070351C300.06 -0.115893 336.085 0.123564 372.109 0.15017C408.134 0.203383 444.374 0.176776 480.398 0.256595C517.933 0.363021 555.467 0.682297 593.002 0.629084C623.634 0.575872 654.049 1.08139 684.681 0.762116C706.9 0.549265 729.55 0.815329 751.769 0.841935C788.872 0.868541 825.975 0.841935 863.078 0.815329C910.535 0.815329 957.993 0.788722 1005.45 0.788722C1034.79 0.788722 1063.91 0.629084 1093.03 0.841935C1155.37 1.34746 1217.93 1.16121 1280.27 2.03922C1311.77 2.49153 1343.26 3.05026 1374.97 3.28972C1386.84 3.36954 1420.06 3.84845 1431.92 4.14112C1435.8 4.24755 1440.76 4.30076 1439.9 5.12556C1439.25 5.87053 1434.51 5.87053 1430.41 5.87053C1402.8 5.84393 1353.4 5.81732 1325.79 5.84393C1297.74 5.84393 1269.49 5.95035 1241.66 5.76411C1201.1 5.49805 1160.77 5.60447 1120.21 5.36501C1057.87 5.01913 995.743 4.69985 933.401 4.75307C877.315 4.77967 821.445 4.54022 765.359 4.67325C726.53 4.75307 687.917 4.77967 649.088 4.69986C594.728 4.56682 540.583 4.56682 486.223 4.56682C448.904 4.56682 411.801 4.67325 374.482 4.69986C336.085 4.72646 297.903 4.59343 259.506 4.69986C219.598 4.83289 179.691 5.23198 139.784 5.39162C78.089 5.63108 82.619 5.84393 21.3558 4.24755C15.7472 4.11452 10.3543 3.92827 4.96146 3.76863C1.72572 3.66221 0 3.36954 0 2.89062C0 2.3851 2.15716 2.14565 5.17717 2.06583C8.19719 1.98601 11.4329 1.90619 14.6687 1.87958C17.473 1.85298 20.2773 1.9328 22.6501 1.9328ZM31.4945 3.2099C57.1646 4.19433 61.2632 3.98148 87.3648 4.08791C141.941 4.30076 152.295 4.0347 206.871 3.60899C251.093 3.26311 295.315 2.8108 339.752 2.57135C396.701 2.25207 453.434 2.11904 510.383 1.9328C328.319 1.40067 213.127 0.629084 31.4945 3.2099ZM1349.52 4.43379C1215.56 2.09243 1081.17 3.15669 946.775 3.31633C1080.95 3.74203 1215.13 4.67325 1349.52 4.43379Z" fill="black"/>
+      </svg>
+    </div>
+  </div>
+</header>
+<!-- end header  -->
+
+<!-- start section price-form  -->
+  <section class="main-form price-form ">
+    <div class="container not">
+      <div class="main-form__wrapper">
+        <div class="main-title not">
+          <h3>طلب عرض سعر</h3>
+        </div>
+        <div class="main-form__wrapper__form ">
+          <form action="#">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" placeholder="الأسم" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" placeholder=" البريد الاكتروني" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="text" name="phone-number" class="form-control" placeholder="رقم الجوال" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <div class="tt-select">
+                    <select class="form-select" name="city" title="city" required>
+                      <option disabled selected>الخدمة</option>
+                      <option value="الخدمة"> 1الخدمة</option>
+                      <option value="الخدمة"> 2الخدمة</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label class="form-control" for="file"> <i class="bi bi-link-45deg me-3"></i> ارفاق المخطط</label>
+                  <input type="file" name="cv" id="file" class="form-control" placeholder=" ارفاق المخطط" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <textarea name="message" rows="10" class="form-control" placeholder="رسالتك" required></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input type="submit" class="form-control" value="إرسال">
+                </div>
+              </div>
+            </div>
+
+          </form> 
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end section price-form  -->
+
+<!-- start footer section -->
+  <footer class="footer " >
+  <div class="container">
+    <div class="footer__wrapper ">
+      <div class="row justify-content-end">
+        <div class="col-lg-7">
+          <div class="row justify-content-center  row-footer">
+            <div class="col-12">
+              <div class="row justify-content-center">
+                <div class="col-sm-3">
+                  <div class="footer__wrapper__logo">
+                    <img src="./images/logo/logo.svg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4"><a href="#" class="footer__wrapper__info"><p><i class="bi bi-geo-alt-fill"></i> <span>عنوان الشركة</span></p></a></div>
+            <div class="col-4"><a href="mailto:test@gmail.com" class="footer__wrapper__info"><p><i class="bi bi-envelope-fill"></i> <span>test@gmail.com</span></p></a></div>
+            <div class="col-4"><a href="tel:747347474747" class="footer__wrapper__info"><p><i class="bi bi-telephone-fill"></i> <span>747347474 </span></p></a></div>
+            <div class="col-3 text-center">
+              <a href="#" class="footer__wrapper__social" ><i class="bi bi-facebook"></i></a>
+              <a href="#" class="footer__wrapper__social" ><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+<img src="./images/footer-border.png" class="img-fluid main-border" alt="">
+      <img src="./images/footer.png" class="img-fluid main-bg" alt="">
+    </div>
+  </div>
+  </footer>
+<!-- end footer section -->
+
+  <!-- start main fils  -->
+
+  <!-- jquery.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
+
+  <!-- bootstrap.bundle.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+
+  <!-- end main fils  -->
+
+  <!-- main  -->
+  <script src="./js/main.js"></script>
+
+  <!-- specific file -->
+  <script src="./js/vendors/select.js"></script>
+</body>
+</html>

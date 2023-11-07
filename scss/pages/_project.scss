@@ -1,0 +1,87 @@
+/*------------
+  project
+------------*/
+.project {
+  &__wrapper {
+    &__header {
+      position: relative;
+      margin-bottom: 50px;
+      .main-border {
+        max-width: 1440px;
+        width: 100%;
+      }
+      h2 {
+        line-height: 1;
+        font-size:$font-50 ;
+        font-weight: $fw-600;
+        padding-bottom: 20px;
+      }
+      @include responsive(max,991px) {
+        margin-bottom: 20px;
+        h2 {
+          font-size:$font-24 ;
+        }
+      }
+      @include responsive(max,767px) {
+        margin-bottom: 10px;
+        h2 {
+          font-size:$font-20 ;
+        }
+      }
+
+    }
+    &__boxs {
+      @include responsive(max,767px) {
+        display: none;
+      }
+      &__box {
+        &:first-of-type {
+          margin-bottom: 30px;
+        }
+        img{
+          width: 100%;
+          
+        }
+      }
+    }
+    &__slider {
+      display: none;
+      @include responsive(max,767px) {
+        display: block;
+      }
+      .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: -26px;
+        position: relative;
+        .owl-dot {
+          span {
+            background: rgba(255, 255, 255, 0.20);
+          }
+          &.active {
+            span {
+              background: rgba(255, 255, 255, 0.64);
+            }
+          }
+        }
+      }
+    }
+    .main-text {
+      * {
+        font-size: $font-26;
+        color: $light-gray;
+        font-weight: $fw-400;
+        @include responsive(max,767px) {
+          font-size: $font-22;
+        }
+        @include responsive(max,575px) {
+          font-size: $font-18;
+        }
+        @include responsive(max,400px) {
+          font-size: $font-16;
+        }
+        @include responsive(max,350px) {
+          font-size: $font-14;
+        }
+      }
+    }
+  }
+}

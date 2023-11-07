@@ -1,0 +1,194 @@
+
+/*--------
+  user
+-----------*/
+
+.user {
+  &__wrapper {
+    article {
+      border-radius: 16px;
+      background: #FFF;
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.08);
+      margin-#{$e}: 60px;
+      @include responsive(max,991px) {
+        margin-#{$e}: 0px;
+        margin-bottom: 20px;
+      }
+    }
+    &__user-info {
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      @include responsive(max,767px) {
+        padding: 16px;
+      }
+      &__img {
+        width: 65px;
+        height: 65px;
+        background-color: #FDC040;
+        @include responsive(max,767px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      &__name {
+        color: #444;
+        font-weight: $fw-600;
+        margin-bottom: 8px;
+      }
+      &__email {
+        color: #888;
+        font-size: $font-14;
+        font-weight: $fw-400;
+      }
+    }
+    &__btn-tab {
+      .nav {
+        border-top: 1px solid $border-color1;
+        border-bottom: 1px solid $border-color1;
+      }
+      .nav-link {
+        text-align: start;
+        padding: 24px;
+        @include responsive(max,767px) {
+          padding: 16px;
+        }
+        color: #707070 ;
+        font-weight: $fw-400;
+        border-radius:0;
+        transition: all 0.2s ease;
+        line-height: normal;
+        * {
+          color: #707070 ;
+        }
+        i {
+          font-size: $font-24;
+          margin-#{$e}: 8px;
+        }
+        &.active  {
+          background-color: rgba($primary-color, 0.15);
+          color: $black-color ;
+          font-weight: $fw-600;
+          *{
+            color: $black-color ;
+          }
+        }
+        &#checkout {
+          color: #F00 ;
+          font-weight: $fw-500 ;
+        }
+      }
+      .img-fluid {
+        width: 24px;
+        height: 24px;
+        margin-#{$e}: 8px;
+        transform:scaleX($n);
+      }
+    }
+    &__tab-body{
+      &__header {
+        padding-bottom: 8px;
+        border-bottom: 2px solid $black-color;
+        margin-bottom: 50px;
+        @include responsive(max,767px) {
+          margin-bottom: 20px;
+        }
+         + .row > .col-md-6:last-of-type .user__wrapper__tab-body__box {
+          border: 0 !important;
+         }
+        *{
+          font-size: $font-22;
+          font-weight: $fw-600;
+          line-height: normal;
+        }
+      }
+      form {
+        .form-group {
+          margin-bottom: 35px;
+          @include responsive(max,767px) {
+            margin-bottom: 15px;
+          }
+          .form-control {
+            @extend %input;
+            &[type="submit"] {
+              margin-top: 50px;
+              max-width: 300px;
+              @include responsive(max,767px) {
+                margin-top: 20px;
+                max-width: 100%;
+              }
+              background-color: $primary-color;
+              border-color: $black-color;
+              color: $black-color;
+              font-size: $font-18;
+              font-weight: $fw-600;
+            }
+          }
+        }
+      }
+      &__box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-radius: 25px;
+        background-color: $white-color;
+        padding: 16px;
+        box-shadow: 0px 4px 13px 0px rgba($black-color, 0.15);
+        margin-bottom: 24px;
+        @include responsive(max,767px) {
+          margin-bottom: 0;
+          box-shadow: none;
+          border-radius: 0;
+          padding: 24px;
+          border-bottom:1px solid #EFEFEF;
+        }
+        @include responsive(max,380px) {
+          padding: 12px 0;
+          gap: 10px;
+
+        }
+        &__img {
+          overflow: hidden;
+          height: 135px;
+          width: 135px;
+          border-radius: 25px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &__head {
+          font-size: $font-18;
+          font-weight: $fw-600;
+          line-height: normal;
+          margin-bottom: 4px;
+        }
+        &__done {
+          color: #00B833;
+          margin-bottom: 4px;
+          i {
+            color: #00B833;
+            margin-#{$s}:4px ;
+            font-size: $font-18;
+          }
+        }
+        &__time-numOrder {
+          color: $gray-color;
+          margin-bottom: 4px;
+          * {
+            color: $gray-color;
+          }
+        }
+        &__Reorder{
+          color:$primary-color;
+          i {
+            color:$primary-color;
+            margin-#{$e}:5px ;
+            font-size: $font-18;
+          }
+        }
+      }
+    }
+  }
+}

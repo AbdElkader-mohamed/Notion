@@ -1,0 +1,72 @@
+// select box
+.tt-select {
+  position: relative;
+  height: auto;
+  padding: 0px;
+  margin-bottom: 1rem;
+  select {
+    display: none;
+  }
+  .select-selected:after,
+  .select-selected::before {
+    position: absolute;
+    font-family: "Bootstrap-icons";
+    font-weight: 900;
+    top: 50%;
+    transform: translateY(-50%);
+    #{$e}: 0;
+    width: 60px;
+    line-height: 50px;
+    height: 100%;
+    text-align: center;
+    background: #F8F8F8;
+    border-radius: 8px 0 0 8px;
+    z-index: -1;
+    @include responsive(min,1400px) {
+      width: 100px;
+      line-height: 60px;
+    }
+  }
+  .select-selected:after {
+    content: "\F282";
+    opacity: 1;
+  }
+  .select-selected:before {
+    content: "\F286";
+    opacity: 0;
+  }
+  .select-selected.select-arrow-active::after {
+    opacity: 0;
+  }
+  .select-selected.select-arrow-active:before {
+    opacity: 1;
+  }
+  .select-items div,
+  .select-selected {
+    color: $white-color;
+    padding: 8px 16px;
+    cursor: pointer;
+    line-height: 24px;
+    text-align: start;
+  }
+  .select-items div {
+    color: $black-color;
+  }
+  .select-items {
+    position: absolute;
+    background-color: $white-color;
+    top: 120%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.17);
+    border-radius: 8px;
+  }
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover,
+  .same-as-selected {
+    background-color: #f5f5f5;
+  }
+}

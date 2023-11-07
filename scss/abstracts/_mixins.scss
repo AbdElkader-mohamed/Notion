@@ -1,0 +1,76 @@
+
+// responsive media 
+
+@mixin responsive($type,$size) {
+  @media (#{$type}-width: $size) {
+    @content;
+  }
+}
+
+// main animation 
+
+@mixin keyFrames($name){
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// handel fly main-bg 
+@mixin fly-main-bg($top,$x) {
+  position: absolute;
+  top: $top;
+  #{$x}: 10px;
+  z-index: -1;
+  transform: scaleX($n);
+}
+
+// handel static main-bg 
+@mixin static-main-bg($height,$position-x,$font) {
+  min-height: $height;
+  display: flex;
+  margin-bottom: 60px;
+  transform: scaleX($n);
+  > .row {
+    justify-content: $position-x;
+    transform: scaleX($n);
+  }
+  h2 {
+    font-size: $font;
+    line-height: 45px;
+    font-weight: $fw-600;
+    @include  responsive(max,575px) {
+      line-height:normal;
+    }
+  }
+}
+
+// list
+@mixin list($font,$lh) {
+  &__ul  {
+    li {
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: $font;
+      line-height: $lh;
+    }
+  }
+}
+
+// hero-main 
+@mixin hero-main() {
+  &.main-bg {
+    background-position: bottom ;
+    background-size: contain;
+  }
+  display: block;
+  margin-bottom: 30px;
+  > .row {
+    min-height: inherit;
+    align-items: flex-end;
+  }
+  h2:not(.not) {
+    text-align: end;
+    margin-bottom:40px;
+  }
+}

@@ -1,0 +1,685 @@
+/*------------
+  home page
+---------------*/
+.main-bg {
+  background-repeat: no-repeat;
+}
+// hero
+.hero {
+  .main-bg {
+    background-position: bottom;
+    @include responsive(max,1003px) {
+      background-image:url(../../images/tab/home1.png) !important;
+      background-size: contain;
+    }
+    @include responsive(max,575px) {
+      background-image: url(../../images/home/Vector.svg) !important;
+      background-position: bottom left;
+      background-size:auto;
+    }
+    @include responsive(max,300px) {
+      background-image: none !important;
+    }
+  }
+  &__wrapper {
+    &__top {
+      @include responsive(min,992px) {
+        padding: 0 50px;
+      }
+      display: flex;
+      align-items: center;
+      gap: 52px;
+      margin-bottom: 70px;
+      @include responsive(max,991px) {
+        gap: 59px;
+        margin-bottom: 30px;
+      }
+      @include responsive(max,575px) {
+        gap: 17px;
+        margin-bottom: 35px;
+      }
+      @include responsive(max,300px) {
+        margin-bottom: 20px;
+      }
+      &__logo {
+        flex: 1;
+        img {
+          width: 100%;
+        }
+      }
+      &__head {
+        h1 {
+          font-size: $font-70;
+          font-weight: $fw-700;
+          line-height: 127.2%;
+          span {
+            font-weight: $fw-700;
+            font-size: inherit;
+            color: $primary-color;
+          }
+          @include responsive(max,991px) {
+            font-size: $font-60;
+          }
+          @include responsive(max,845px) {
+            font-size: $font-50;
+          }
+          @include responsive(max,700px) {
+            font-size: $font-40;
+          }
+          @include responsive(max,575px) {
+            font-size: $font-30;
+          }
+          @include responsive(max,400px) {
+            font-size: $font-24;
+          }
+          @include responsive(max,575px) {
+            font-size: $font-30;
+          }
+          @include responsive(max,300px) {
+            font-size: $font-20;
+          }
+          
+        }
+      }
+    }
+    &__bottom {
+      position: relative;
+      @include responsive(max,575px) {
+        &::before {
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: 0px;
+          left: 100px;
+          background:url(../../images/home/border.png) ;
+          overflow: hidden;
+          height: 2px;
+        }
+      }
+      @include responsive(max,300px) {
+        &::before {
+          display: none;
+        }
+      }
+      transform: scaleX($n);
+      > .row {
+        justify-content: start;
+        min-height: 370px;
+        transform: scaleX($n);
+        @include responsive(min,1200px) {
+          align-items: center;
+        }
+        @include responsive(max,1003px) {
+          min-height: 280px;
+        }
+        @include responsive(max,768px) {
+          min-height: 228px;
+        }
+        @include responsive(max,644px) {
+          min-height: 198px;
+        }
+        > [class*="col-"] > p {
+          width:90%;
+        }
+        @include responsive(max,575px) {
+          min-height: 230px;
+            > [class*="col-"] > p {
+              width:100%;
+          }
+        }
+        @include responsive(max,300px) {
+            > [class*="col-"] {
+              width:100%;
+          }
+        }
+      }
+      &__text {
+        margin-#{$s}: 50px;
+        @include responsive(max,1085px) {
+          @include responsive(min,1003px) {
+            margin-#{$s}: 30px;
+            margin-bottom: 60px;
+          }
+        }
+        @include responsive(max,1270px) {
+          @include responsive(min,1003px) {
+            padding-#{$e}: 100px;
+        }
+        }
+        text-align: justify;
+        line-height: 32px;
+        font-size: $font-24;
+        @include responsive(min,1400px) {
+          font-size: $font-26;
+        }
+        @include responsive(max,1003px) {
+          font-size: $font-22;
+        }
+        @include responsive(max,992px) {
+          font-size: $font-20;
+          line-height: 1.3;
+        }
+        @include responsive(max,768px) {
+          margin-#{$s}: 0px;
+          font-size: $font-18;
+          line-height: 1.2;
+        }
+        @include responsive(max,644px) {
+          font-size: $font-16;
+          line-height: 1.1;
+        }
+        @include responsive(max,575px) {
+          font-size: $font-20;
+          line-height: 30px;
+        }
+        @include responsive(max,480px) {
+          line-height: 28px;
+          font-size: $font-16;
+          margin-bottom: 10px;
+          padding-#{$e}: 30px;
+        }
+        @include responsive(max,350px) {
+          line-height: 18px;
+        }
+        @include responsive(max,300px) {
+          padding-#{$e}: 0;
+        }
+      }
+    }
+  }
+}
+
+// services
+.services {
+  .main-bg {
+    background-position: top $s ;
+  }
+  &__wrapper {
+    @include responsive(max, 992px){
+      background-image:none !important;
+    }
+    .swiper-3d {
+      @include responsive(min, 992px) {
+        perspective:1100px;
+      }
+    }
+    .swiper-slide:not(.swiper-slide-visible) {
+      opacity: 0;
+      visibility: hidden
+    }
+    &__slider {
+      .tranding-slider {
+        > div {
+          padding: 0 10px;
+          @include responsive (max, 992px) {
+            display: grid;
+            grid-auto-columns: 300px;
+            gap: 30px;
+            grid-auto-flow: column;
+            scroll-snap-type:x mandatory;
+            overflow: scroll;
+            &::-webkit-scrollbar {
+              display: none;
+            }
+          }
+        }
+      }
+      &__slide-content {
+        border-radius: 8px;
+        $m-y:40;
+        @include responsive (max, 992px) {
+          $m-y:20;
+        }
+        margin: #{$m-y}px 0;
+        padding: 50px 60px;
+        background-color: $white-color;
+        height: calc(100% - #{($m-y * 2)}px);
+        @include responsive (max, 992px) {
+          padding: 20px 30px;
+          
+        }
+        // @include responsive(max, 575px){
+        //   display: flex;
+        //   flex-direction: column;
+        //   justify-content: center;
+        //   height: 365px;
+        //   width: 265px;
+        //   margin: 16px 0;
+        //   padding: 20px;
+        // }
+        box-shadow: 0px 4.07982px 32.63858px 0px rgba(0, 0, 0, 0.25);
+        @include responsive (max, 992px) {
+          box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.15);
+        }
+        &__icon {
+          width: 82px;
+          margin-bottom: 22px;
+        @include responsive(max, 575px) {
+          width: 60px;
+        }
+        }
+        &__head {
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          border-bottom: 1px solid $black-color;
+           * {
+            font-size: $font-24;
+            font-weight: $fw-600;
+          }
+          @include responsive(max, 575px) {
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+             * {
+              font-size: $font-18;
+            }
+
+          }
+        }
+        &__text {
+          * {
+            font-size: $font-18;
+            font-weight: $fw-400;
+            line-height:  25px ;
+          }
+        }
+      }
+    }
+  }
+  &__best-company {
+    @include static-main-bg(330px, end, $font-40);
+    background-size: contain !important;
+    background-position:bottom right !important ;
+    > .row {
+      height: inherit;
+      align-items: end !important;
+      margin-bottom: 20px;
+    }
+    @include responsive(max, 1100px) {
+      @include static-main-bg(230px, end, $font-30);
+    }
+    @include responsive(max, 900px) {
+      h2 {
+        font-size: $font-28;
+        line-height: 30px;
+      }
+      margin-bottom: 30px;
+    }
+    @include responsive(max, 575px){
+      @include static-main-bg(120px, end, $font-18);
+      margin-bottom: 30px;
+      background-image: url(../../images/home/services-mob.svg) !important;
+      > .row > [class*="col-"] {
+        padding-left: 0;
+        h2 {
+        line-height: 20px;
+        }
+      }
+    }
+    @include responsive(max, 500px) {
+      > .row {
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: $font-16;
+        line-height: 16px;
+        }
+    }
+  }
+  &__list{
+    @include list($font-26,33px);
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        img {
+          width: 64px;
+          height: 64px;
+        }
+      }
+    }
+    @include responsive(max, 900px){
+      @include list($font-18,20px);
+      ul {
+        li {
+          gap: 25px;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// important-projects
+.important-projects {
+  &__wrapper {
+    &__cards {
+    display: grid;
+    gap: 53px;
+    margin-top: 50px;
+    grid-auto-columns:396px;
+    @include responsive(max, 992px){
+      grid-auto-columns:330px;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    @include responsive(max, 800px){
+      grid-auto-columns:250px;
+    }
+    @include responsive(max, 575px){
+      grid-auto-columns:180px;
+      gap: 20px;
+    }
+    grid-auto-flow: column;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    @include responsive(max, 575px){
+      gap: 30px;
+      margin-top: 30px;
+    }
+      &__card {
+        * {
+        }
+        &__img {
+          display: block;
+          position: relative;
+          border-radius: 8px;
+          overflow: hidden;
+          img{
+            width: 396px;
+            height: 480px;
+            @include responsive(max, 992px) {
+                height: 380px;
+              }
+            @include responsive(max, 800px) {
+              width: auto;
+            }
+              @include responsive(max, 575px){
+              height: 240px;
+            }
+            filter: grayscale(90%);
+            transition: filter .4s ease;
+          }
+          &:hover {
+            img {
+              filter: none;
+            }
+          }
+        }
+
+        &__head {
+          * {
+            margin-top: 30px;
+            font-size: $font-24;
+            font-weight: $fw-600;
+            @include responsive(max, 992px) {
+              margin-top: 10px;
+              font-size: $font-18;
+            }
+          }
+        }
+        &__text {
+          * {
+            margin: 10px 0 20px;
+            font-size: $font-16;
+            font-weight: $fw-400;
+            @include responsive(max, 992px) {
+              margin: 5px 0 10px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// size-notion
+.size-notion {
+  overflow: visible;
+  .container {
+    position: relative;
+  }
+  &__wrapper {
+    .main-bg {
+      @include fly-main-bg(-100px,$e);
+      @include responsive(max, 992px){
+        display: none;
+      }
+    }
+    &__img {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 20px;
+      @include responsive(max, 400px) {
+        margin-bottom: 16px;
+        .d-none {
+          display: block !important;
+        }
+        > :not(.d-none) {
+        display: none !important;
+        }
+      }
+    }
+    &__boxs {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      gap: 68px;
+      @include responsive(max, 992px) {
+        gap: 30px;
+      }
+      flex-wrap: nowrap;
+      @include responsive(max, 575px){
+        gap: 10px;
+      }
+      &__box {
+        width: 100%;
+        * {
+          font-size: $font-22;
+          line-height: 28px ;
+          text-align: justify;
+          @include responsive(max, 992px){
+            font-size: $font-18;
+            line-height: 20px ;
+          }
+          @include responsive(max, 575px){
+            font-size: $font-14;
+            line-height: 16px ;
+            text-align:start;
+          }
+          @include responsive(max, 400px){
+            font-size: $font-12;
+            line-height: 16px ;
+          }
+        }
+      }
+    }
+  }
+}
+
+// working
+.working {
+  &__wrapper {
+    > div:first-of-type {
+      position: relative;
+      padding-bottom: 25px;
+      margin-bottom: 50px;
+      @include responsive(max, 992px){
+        margin-bottom: 20px;
+        padding-bottom: 16px;
+      }
+    }
+    &__video {
+      position: relative;
+      margin-top: 50px;
+      @include responsive(max, 575px){
+        margin-top: 20px;
+      }
+      video {
+        width: 100%;
+      }
+      img {
+        &:first-of-type {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        z-index: 3;
+        @include responsive(max, 992px){
+          width: 70px;
+          height: 70px;
+        }
+        @include responsive(max, 575px){
+          width: 35px;
+          height: 35px;
+        }
+      }
+      &__bg {
+        &::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          inset: 0;
+          z-index: 1;
+          background: rgba(0, 0, 0, 0.39);
+        }
+      }
+    }
+    &__head {
+      margin:25px 0 16px ;
+      @include responsive(max, 992px){
+        margin:12px 0 8px ;
+      }
+      * {
+        font-size: $font-22;
+        font-weight: $fw-600;
+        line-height: normal;
+        @include responsive(max, 992px){
+          font-size: $font-18;
+        }
+      }
+    }
+    &__text {
+      * {
+        font-size: $font-18;
+        line-height: normal;
+        @include responsive(max, 575px){
+          font-size: $font-14;
+        }
+      }
+    }
+    &__boxs {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: nowrap;
+      overflow: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      @include responsive(max, 992px){
+        gap: 10px;
+      }
+      &__box {
+        width: 100%;
+        @include responsive(max, 850px){
+          width: 130px;
+          height: 140px;
+          flex-shrink: 0;
+        }
+        &__head {
+          margin-top: 16px;
+          * {
+            text-align: center;
+            font-size: $font-18;
+            font-weight: $fw-600;
+            @include responsive(max, 575px){
+              font-size: $font-16;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.customers {
+  padding-bottom: 0;
+  .main-bg {
+    background-position: bottom ;
+    background-size: contain;
+  }
+  &__wrapper {
+    &__header {
+      @include static-main-bg(255px, start, $font-40);
+      @include responsive(max, 992px){
+        @include static-main-bg(200px, start, $font-40);
+        margin-bottom: 20px;
+        > .row {
+          align-items: flex-end !important;
+          h2 {
+            margin-bottom: 20px;
+          }
+        }
+      }
+      @include responsive(max, 768px){
+        @include static-main-bg(130px, start, $font-24);
+        margin-bottom: 20px;
+      }
+      @include responsive(max, 575px){
+        background-image: url(../../images/home/customer-mob.svg) !important;
+
+      }
+    }
+    &__body{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      @include responsive(max, 768px) {
+        gap: 30px;
+      }
+      @include responsive(max, 575px) {
+        gap: 10px;
+      }
+      &__customer {
+        width: calc((100% - 300px) / 7);
+        @include responsive(max, 768px) {
+        width: calc((100% - 150px) / 6);
+        }
+        @include responsive(max, 575px) {
+        width: calc((100% - 30px) / 4);
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          max-height: 220px;
+          max-width: 100%;
+          @include responsive(max, 575px) {
+            min-width: 60px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $black-color;
+}
+
+.form-control:focus,
+.btn:focus{
+  box-shadow: none;
+}
+
+section {
+  overflow: hidden;
+  padding: 60px 0;
+  @include responsive(max,991px) {
+    padding: 30px 0;
+  }
+}
+
+ul:not(.not) {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+textarea {
+  resize: none;
+}
+textarea:focus,
+input:not([type="radio"]):focus {
+  outline-color: $black-color !important;
+  border-color:$black-color !important;
+  box-shadow: none !important;
+}
+.form-check-input,
+.form-select {
+  box-shadow: none !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+  color: $black-color;
+  line-height: 1;
+  font-weight: $fw-500;
+  margin-bottom: 0;
+}
+
+h1{
+  font-size: 128px;
+}
+h2{
+  font-size: 72px;
+}
+h3{
+  font-size: 44px;
+}
+h4{
+  font-size: 36px;
+}
+h5{
+  font-size: 18px;
+}
+h6{
+  font-size: 16px;
+}
+
+
+.container:not(.not){
+  @include responsive(max,1440px) {
+    max-width: 1440px;
+  }
+}
+

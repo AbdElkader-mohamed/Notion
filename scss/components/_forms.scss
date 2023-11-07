@@ -1,0 +1,308 @@
+/*----------------
+  Forms
+-----------------*/
+%input {
+  color: $border-color2;
+  padding: 12px 24px;
+  @include responsive(min,1400px) {
+    padding: 18px 24px;
+    font-size: $font-18;
+  }
+  border-radius: 8px;
+  border: 1px solid $border-color;
+  font-weight: $fw-500;
+  &::placeholder {
+    color: $border-color2;
+  }
+  
+} 
+
+%form {
+  .form-group {
+    text-align: center;
+    margin-bottom: 30px;
+    @include responsive(max,575px) {
+      margin-bottom: 26px;
+    }
+    .or {
+      position: relative;
+      font-size: $font-14;
+      font-weight: $fw-400;
+      &::before ,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        height: 1px;
+        width: 190px;
+        background-color: #B0B0B0;
+        @include responsive(max,991px) {
+          width: 400px;
+        }
+        @include responsive(max,891px) {
+          width: 300px;
+        }
+        @include responsive(max,791px) {
+          width: 240px;
+        }
+        @include responsive(max,575px) {
+          width: 150px;
+        }
+      }
+      &::before {
+        left: 0;
+      }
+      &::after {
+        right: 0;
+      }
+    }
+    .google-login {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+      @extend %input;
+      * {
+        color: #222;
+        font-size: $font-18;
+      }
+    }
+  }
+  .form-control, .form-select , .select-selected {
+    @extend %input;
+    &[type="submit"] {
+      background-color: $primary-color;
+      border-color: $black-color;
+      font-size: $font-18;
+      font-weight: $fw-600;
+      color: $black-color;
+    }
+  }
+}
+// login
+.login {
+  @include responsive(max,850px) {
+    .container {
+      max-width: 1440px;
+    }
+  }
+  &__wrapper {
+    &__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      form {
+        max-width: 450px;
+        width: 100%;
+        padding:0 20px ;
+        @include responsive(max,991px) {
+          max-width: 100%;
+        }
+        @include responsive(max,575px) {
+          padding:0 ;
+        }
+        @extend %form;
+      }
+      .not-subscripted {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+          color: $border-color;
+        }
+        &__btn {
+          border-radius: 0;
+          border: 0;
+          padding: 0;
+          font-weight: $fw-500;
+          border-bottom: 1px solid $black-color;
+        }
+      }
+    }
+  }
+}
+
+// subscripted-modal
+.subscripted-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  &.active {
+  opacity: 1;
+  visibility: visible;
+  }
+  &:before  {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: -1;
+  }
+  &__form {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 460px;
+    width: 100%;
+    background:$white-color;
+    border-radius: 40px;
+    box-shadow: 0px 2px 36px 0px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    @include responsive(max,991px) {
+      border-radius: 2px;
+    }
+    form {
+      @extend %form;
+      padding: 40px;
+      @include responsive(max,575px) {
+        padding:20px ;
+      }
+      .form-group:last-of-type {
+        margin-bottom:0;
+      }
+
+      .form__header {
+        position: relative;
+        border-bottom: 1px solid $black-color;
+        padding-bottom: 16px;
+        margin-bottom: 30px;
+        @include responsive(max,575px) {
+          margin-bottom: 20px;
+        }
+        h3 {
+          text-align: center;
+          font-size: $font-22;
+          font-weight: $fw-600;
+          @include responsive(max,575px) {
+            font-size: $font-18;
+          }
+        }
+        .close-btn {
+          padding: 0;
+          border: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          i {
+            font-size: $font-20;
+            &::before {
+              font-weight:$fw-600 !important;
+            }
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+  &.active {
+    .subscripted-modal__form{
+      top: 50%;
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0.2s;
+
+    }
+  }
+}
+
+// main-form 
+.main-form {
+  padding-bottom: 0;
+  &__wrapper {
+    &__form {
+      form {
+        position: relative;
+        z-index: 2;
+        @extend %form;
+        label {
+          text-align: start;
+          background-color: $light-color;
+          cursor: pointer;
+        }
+        .form-control, .select-selected {
+          border-color: $border-color2 ;
+          &[type="file"] {
+            display: none;
+          }
+          &[type="submit"] {
+            color: $black-color;
+            max-width: 200px;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+//contact-us 
+
+.contact-us {
+  padding-bottom: 0;
+  iframe {
+    padding:0 30px;
+    @include responsive(max,991px) {
+      padding:0;
+    }
+    @include responsive(max,767px) {
+      height: 350px;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    margin-bottom: 120px;
+    transform: scaleX($n);
+    @include responsive(max,575px) {
+      margin-bottom: 20px;
+    }
+    > .row {
+        justify-content: start;
+        transform: scaleX($n);
+    }
+
+    &__form {
+    margin:0 30px;
+    @include responsive(max,992px) {
+      margin:0 ;
+    }
+      @extend %form;
+      .form-group  {
+        &:nth-of-type(3) {
+          margin-bottom: 70px;
+          @include responsive(max,575px) {
+            margin-bottom: 26px;
+          }
+        }
+        text-align: start;
+        .form-label {
+          text-align: start;
+          margin-bottom: 10px;
+          font-size: $font-24;
+          font-weight: $fw-600;
+          @include responsive(max,991px) {
+            font-size: $font-20;
+          }
+        }
+        .form-control {
+          &[type="submit"] {
+            margin: 26px auto ;
+            margin-top: 30px;
+            max-width: 300px;
+
+            width: 100%;
+            color:$black-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,147 @@
+/*------------
+  shopping cart
+------------*/
+.shopping-cart {
+  &__wrapper {
+    &__header  {
+      padding-bottom: 8px;
+      border-bottom: 2px solid $black-color;
+      margin-bottom: 50px;
+      @include responsive (max,991px) {
+        margin-bottom: 20px;
+      }
+      @include responsive (max,575px) {
+        margin-bottom: 10px;
+      }
+      *{
+        font-size: $font-22;
+        font-weight: $fw-600;
+        line-height: normal;
+      }
+    }
+    &__table {
+      margin-bottom: 20px;
+      &__img {
+        img {
+          border-radius:20px ;
+          width: 110px;
+          height: 110px;
+        }
+      }
+      &__counter {
+        text-align: center;
+        .counter {
+          * {
+            font-size: $font-18;
+            font-weight: $fw-700 !important;
+            border: 0;
+            i:before {
+              font-weight: $fw-700 !important;
+            }
+          }
+        }
+        .value {
+          margin: 0 35px;
+          @include responsive (max,575px) {
+            margin: 0 10px;
+          }
+        }
+      }
+      &__price {
+        text-align: end;
+      }
+    }
+    &__link {
+      font-weight: $fw-600;
+      font-size: $font-18;
+      i {
+        margin-#{$s}: 16px;
+        font-size: $font-18;
+        &::before {
+          transform: scaleX($n);
+          font-weight: $fw-600 !important;
+        }
+      }
+    }
+    &__payment {
+      border-radius: 30px;
+      background: rgba(216, 216, 216, 0.16);
+      padding: 50px 70px;
+      @include responsive (max,575px) {
+        padding: 30px ;
+        border-radius: 20px;
+
+      }
+      &__way {
+        &__text {
+          color: $e7;
+          margin-bottom: 16px;
+          * {
+            color: $e7;
+          }
+          &.not {
+            * {
+              color: $black-color !important;
+              font-size: $font-18;
+            }
+          }
+        }
+        &__price {
+          margin-bottom: 30px;
+          .shopping-cart__wrapper__payment__way__text  {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+        .form-check {
+          padding-#{$s}:1.8em;
+          margin-bottom: 12px;
+          .form-check-input {
+            margin-#{$s}:-1.8em ;
+          }
+          .form-check-label {
+            font-size: $font-18;
+            i,img {
+              font-size: $font-18;
+              margin-#{$e}:8px ;
+            }
+          }
+        }
+        .form-group {
+          .form-control {
+            background: transparent;
+            border: none !important;
+            font-size: $font-18;
+            font-weight: $fw-500;
+          }
+          .form-label {
+            color: $e7;
+            margin-bottom: 5px;
+          }
+        }
+        [type="submit"] {
+          &[type="submit"] {
+            background-color: $primary-color;
+            border: 1px solid $black-color !important;
+            font-size: $font-18;
+            font-weight: $fw-600;
+            color: $black-color;
+            padding: 12px 24px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .table>:not(caption)>*>* {
+    font-weight: $fw-600;
+    font-size: $font-18;
+    padding: 20px 10px;
+    vertical-align: middle;
+    @include responsive (max,575px) {
+      padding: 8px;
+    }
+  }
+}

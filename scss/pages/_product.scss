@@ -1,0 +1,144 @@
+/*----------------
+  product
+-----------------*/
+.product {
+  $max-height:700px;
+  .project__wrapper__header {
+    margin-bottom: 80px;
+    @include responsive(max,992px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__wrapper {
+    &__product {
+      display: flex;
+      gap: 100px;
+      @include responsive(max,1240px) {
+        gap: 70px;
+      }
+      @include responsive(max,992px) {
+        flex-direction: column;
+        gap: 0px;
+      }
+      &__img {
+        width: 100%;
+        img {
+          width: 100%;
+          height: $max-height;
+          @include responsive(max,991px) {
+            height: 500px;
+          }
+          @include responsive(max,575px) {
+            height: 300px;
+          }
+          @include responsive(max,400px) {
+            height: 200px;
+          }
+
+        }
+      }
+      &__info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &__head{
+          @include responsive(max,991px) {
+            display: none;
+          }
+          * {
+            font-size: $font-60;
+            line-height: normal;
+            font-weight: $fw-700;
+            @include responsive(max,1240px) {
+              font-size: $font-50;
+            }
+          }
+          
+        }
+        &__price {
+          * {
+            font-size: $font-50;
+            
+          }
+          @include responsive(max,991px) {
+            margin-bottom: 20px;
+            * {
+              font-size: $font-28;
+            }
+          }
+          @include responsive(max,575px) {
+            * {
+              font-size: $font-20;
+            }
+          }
+        }
+        &__text {
+          margin: 25px 0 ;
+          margin-#{$e}: 100px;
+          * {
+            color:$light-gray ;
+            font-size:$font-28 ;
+            text-align: justify;
+          }
+          @include responsive(max,1240px) {
+            margin-#{$e}: 70px;
+            * {
+            font-size:$font-26 ;
+            }
+          }
+          @include responsive(max,991px) {
+            margin: 15px 0 ;
+            margin-#{$e}: 0px;
+            * {
+            font-size:$font-20 ;
+            }
+          }
+          @include responsive(max,575px) {
+            * {
+            font-size:$font-16 ;
+            }
+          }
+        }
+        &__addToCart {
+          margin-top: auto;
+          width: 300px;
+          @include responsive(max,991px) {
+            margin-top: 30px;
+            width: 100%;
+          }
+          @include responsive(max,575px) {
+            margin-top: 10px;
+          }
+          .main-btn {
+            width: 100%;
+            padding: 12px ;
+            background-color: $primary-color !important ;
+            border: 1px solid $black-color;
+            font-size: $font-24;
+            font-weight:$fw-600 ;
+            @include responsive(max,575px) {
+              font-size:$font-18 ;
+            }
+          }
+          &__counter {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            .main-btn {
+              display: block;
+              padding: 0;
+              width: 50px;
+              height: 50px;
+              line-height: 0;
+              border-radius: 50%;
+            }
+            i ,span {
+              font-size: $font-24;
+              font-weight: $fw-600;
+            }
+          }
+        }
+      }
+    }
+  }
+}

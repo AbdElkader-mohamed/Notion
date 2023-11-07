@@ -1,0 +1,40 @@
+/*------------
+  social
+------------*/
+.social {
+  margin-top: 50px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  };
+  &__dokan {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+  a {
+    display: block;
+    background-color:$white-color;
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid $primary-color;
+    transition: background .3s , color .3s;
+    &:hover {
+      color: $white-color;
+      background-color: $primary-color;
+      i {
+        color: $white-color;
+
+      }
+    }
+  }
+}

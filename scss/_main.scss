@@ -1,0 +1,39 @@
+// abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// vendors
+
+// base
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
+
+// components
+@import 'components/main-comp';
+@import 'components/forms';
+@import 'components/custom-select-box';
+@import 'components/slider';
+@import 'components/main-modal';
+
+
+
+// layout
+@import "layouts/header";
+@import "layouts/footer";
+
+// page 
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/services-page';
+@import 'pages/projects';
+@import 'pages/project';
+@import 'pages/product';
+@import 'pages/products';
+@import 'pages/user';
+@import 'pages/done-page';
+@import 'pages/shopping-cart';
+
+
+// themes
+@import "themes/theme";

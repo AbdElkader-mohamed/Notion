@@ -1,0 +1,187 @@
+/*------------
+  projects
+------------*/
+.projects {
+  @include responsive(max,767px) {
+    padding-bottom: 30px !important;
+  }
+  &__wrapper {
+    &__header {
+      position: relative;
+      margin-bottom: 50px;
+      @include responsive(max,767px) {
+        margin-bottom: 20px;
+      }
+      .main-border {
+        max-width: 1440px;
+        width: 100%;
+      }
+      h2 {
+        line-height: normal;
+        font-size:$font-50 ;
+        font-weight: $fw-600;
+        padding-bottom: 20px;
+        position: relative;
+        @include responsive(max,767px) {
+          font-size:$font-28 ;
+        }
+        @include responsive(max,575px) {
+          font-size:$font-20 ;
+        }
+      }
+      .arrow-dropdown {
+        display:none;
+        border: 0;
+        padding: 10px 30px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        #{$e}: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: end;
+        @include responsive(max,575px) {
+          padding: 10px 14px;
+        }
+        i {
+          font-size: $font-26;
+          @include responsive(max,575px) {
+            font-size:$font-20 ;
+          }
+          &::before {
+            transition: all 0.5s;
+            font-weight: $fw-600 !important;
+          }
+        }
+        &.show {
+          i {
+            &::before {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        @include responsive(max, 767px) {
+          display: block;
+        }
+      }
+    }
+    &__slider {
+      @include responsive(max,767px) {
+        display: none;
+      }
+      &__slide {
+        position: relative;
+        &__text {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          padding: 50px;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.5s , visibility 0.5s;
+          * {
+            color: $white-color;
+            font-size: $font-40;
+          }
+          h3 {
+            margin-bottom: 10px;
+            font-weight: $fw-600;
+          }
+        }
+        img {
+          filter: grayscale(90%);
+          transition: filter 0.5s ease-in-out;
+
+        }
+        &:hover {
+          img {
+            filter: none;
+          }
+          .projects__wrapper__slider__slide__text {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+      .owl-theme {
+        .owl-nav {
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          [class*='owl-'] {
+            background: none !important;
+          }
+          .owl-prev , .owl-next {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            &:hover {
+              background-color:$black-color !important;
+              i {
+                color: $white-color;
+              }
+            }
+            transform: scaleX($n);
+            i {
+              font-size: $font-30;
+            }
+          }
+          .owl-dot {
+            span {
+              width: 14px !important;
+              height: 14px !important;
+              background:$black-color;
+              transition: all 0.3s ease;
+            }
+            &.active {
+              span {
+                width: 40px !important;
+              }
+            }
+          }
+        } 
+      }
+    }
+    &__dropdown {
+      @include responsive (min,767px){
+        display: none;
+      }
+      .projects__wrapper__slider__slide--mob {
+        img {
+          width: 100%;
+          height: 215px;
+          @include responsive (max,575px){
+            height: 115px;
+          }
+        }
+        .projects__wrapper__slider__slide__text--mob {
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+          margin-top: 16px;
+          h3 {
+            font-size: $font-24;
+            font-weight: $fw-700;
+            line-height: normal;
+            border-#{$e}: 3px solid $black-color;
+            padding-#{$e}: 16px;
+            margin-#{$e}: 16px;
+            @include responsive(max,575px) {
+              font-size: $font-18;
+            }
+          }
+          p {
+            font-size: $font-24;
+            @include responsive(max,575px) {
+              font-size: $font-18;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

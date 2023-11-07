@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion</title>
+
+  <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon">
+
+  <!-- start main files  -->
+
+  <!-- Bootstrap 5  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css" />
+
+  <!-- swiper-bundle.min.css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <!-- end main fils  -->
+
+  <!-- main file -->
+  <link rel="stylesheet" href="./css/main-ltr.css">
+</head>
+<body >
+
+<!-- start header  -->
+  <header class="header ">
+    <div class="container accordion-body head">
+      <div class="header__wrapper">
+        <nav>
+          <ul class="header__wrapper__list" >
+            <li>
+              <button type="button" class=" btn nav-toggle  ">
+                <i class="bi bi-list"></i>
+              </button>
+            </li>
+            <li class="header__wrapper__list__nav-item header__wrapper__list__nav-item--logo">
+              <a href="user-en.html" class="nav-link"><img src="./images/user.png" class="img-fluid" alt="user"></a>
+            </li>
+            <li class="header__wrapper__list__nav-item header__wrapper__list__nav-item--cart">
+              <a href="./shopping-cart-en.html" class="nav-link"><img src="./images/icons/li_shopping-cart.svg" class="img-fluid" alt="li_shopping-cart"></a>
+              <span>1</span>
+            </li>
+            <li class="header__wrapper__list__nav-item">
+              <a href="./index-en.html" class="nav-link active">الرئيسية</a>
+            </li>
+            <li class="header__wrapper__list__nav-item">
+              <a href="about-en.html" class="nav-link">من نحن</a>
+            </li>
+            <li class="header__wrapper__list__nav-item">
+              <a href="shop-en.html" class="nav-link">المتجر</a>
+            </li>
+            <li class="header__wrapper__list__nav-item">
+              <a href="projects-en.html" class="nav-link">مشاريعنا</a>
+            </li>
+            <li class="header__wrapper__list__nav-item">
+              <a href="services-en.html" class="nav-link">خدماتنا </a>
+            </li>
+            <ul class="header__wrapper__list header__wrapper__list--slice" >
+              <li class="header__wrapper__list__nav-item">
+                <a href="projects-en.html" class="nav-link">مشاريعنا</a>
+              </li>
+              <li class="header__wrapper__list__nav-item">
+                <a href="services-en.html" class="nav-link">خدماتنا </a>
+              </li>
+              <li class="header__wrapper__list__nav-item">
+                <a href="jop-en.html" class="nav-link">التوظيف</a>
+              </li>
+              <li class="header__wrapper__list__nav-item">
+                <a href="price-en.html" class="nav-link">عرض السعر</a>
+              </li>
+              <li class="header__wrapper__list__nav-item">
+                <a href="contact-en.html" class="nav-link">تواصل معنا</a>
+              </li>
+              <li class="header__wrapper__list__nav-item">
+                <a href="./login-en.html" class="nav-link">تسجيل الدخول</a>
+              </li>
+            </ul>
+            <li class="header__wrapper__list__nav-item">
+              <a href="./index.html" class="nav-link">AR</a>
+            </li>
+          </ul>
+        </nav>
+        <svg class="main-border" xmlns="http://www.w3.org/2000/svg" width="1440" height="6" viewBox="0 0 1440 6" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6501 1.9328C61.6946 1.50709 56.086 0.921754 94.9148 0.682297C124.899 0.496052 132.881 0.389627 163.081 0.256595C196.733 0.070351 230.384 0.256595 264.036 0.070351C300.06 -0.115893 336.085 0.123564 372.109 0.15017C408.134 0.203383 444.374 0.176776 480.398 0.256595C517.933 0.363021 555.467 0.682297 593.002 0.629084C623.634 0.575872 654.049 1.08139 684.681 0.762116C706.9 0.549265 729.55 0.815329 751.769 0.841935C788.872 0.868541 825.975 0.841935 863.078 0.815329C910.535 0.815329 957.993 0.788722 1005.45 0.788722C1034.79 0.788722 1063.91 0.629084 1093.03 0.841935C1155.37 1.34746 1217.93 1.16121 1280.27 2.03922C1311.77 2.49153 1343.26 3.05026 1374.97 3.28972C1386.84 3.36954 1420.06 3.84845 1431.92 4.14112C1435.8 4.24755 1440.76 4.30076 1439.9 5.12556C1439.25 5.87053 1434.51 5.87053 1430.41 5.87053C1402.8 5.84393 1353.4 5.81732 1325.79 5.84393C1297.74 5.84393 1269.49 5.95035 1241.66 5.76411C1201.1 5.49805 1160.77 5.60447 1120.21 5.36501C1057.87 5.01913 995.743 4.69985 933.401 4.75307C877.315 4.77967 821.445 4.54022 765.359 4.67325C726.53 4.75307 687.917 4.77967 649.088 4.69986C594.728 4.56682 540.583 4.56682 486.223 4.56682C448.904 4.56682 411.801 4.67325 374.482 4.69986C336.085 4.72646 297.903 4.59343 259.506 4.69986C219.598 4.83289 179.691 5.23198 139.784 5.39162C78.089 5.63108 82.619 5.84393 21.3558 4.24755C15.7472 4.11452 10.3543 3.92827 4.96146 3.76863C1.72572 3.66221 0 3.36954 0 2.89062C0 2.3851 2.15716 2.14565 5.17717 2.06583C8.19719 1.98601 11.4329 1.90619 14.6687 1.87958C17.473 1.85298 20.2773 1.9328 22.6501 1.9328ZM31.4945 3.2099C57.1646 4.19433 61.2632 3.98148 87.3648 4.08791C141.941 4.30076 152.295 4.0347 206.871 3.60899C251.093 3.26311 295.315 2.8108 339.752 2.57135C396.701 2.25207 453.434 2.11904 510.383 1.9328C328.319 1.40067 213.127 0.629084 31.4945 3.2099ZM1349.52 4.43379C1215.56 2.09243 1081.17 3.15669 946.775 3.31633C1080.95 3.74203 1215.13 4.67325 1349.52 4.43379Z" fill="black"/>
+        </svg>
+      </div>
+    </div>
+  </header>
+<!-- end header  -->
+
+<!-- start hero section -->
+  <section class="hero pt-lg "  >
+    <div class="container hero-container">
+      <div class="hero__wrapper">
+        <div class="hero__wrapper__top">
+          <div class="hero__wrapper__top__logo">
+            <img src="./images/logo/logo.svg"  class="img-fluid" alt="">
+          </div>
+          <div class="hero__wrapper__top__head">
+            <h1>حــيـــث يلتــقــي <br> <span>الشغف </span> بالمهنة</h1>
+          </div>
+        </div>
+        <div class="hero__wrapper__bottom main-bg" style="background-image: url(./images/icons/Group.svg);">
+          <div class="row">
+            <div class="col-9 col-sm-7">
+              <p class="hero__wrapper__bottom__text" >شركة سعودية متخصصة في الهندسة المعمارية والتصميم الداخلي، تأسست عام  "" على يد مجموعة من الكوادر الهندسية، حيث تقع الشركة في مدينة " " بالمملكة العربية السعودية، وتضم فريقًا من المهندسين المعماريين والمصممين الداخليين ذوي الخبرة الذين يتمتعون بشغف بإنشاء مساحات جميلة وعملية تلبي احتياجات عملائها. تقدم شركة نوشن مجموعة واسعة من الخدمات، وتسعى دائمًا إلى ابتكار حلول جديدة وإبداعية لتصميم المساحات.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end hero section -->
+
+<!-- start services section  -->
+  <section class="services pt-0 ">
+    <div class="container service">
+      <div class="services__wrapper main-bg" style="background-image: url(./images/home/services.png);" >
+        <div class="main-head">
+          <h3>خدمــاتـنا</h3>
+          <img src="./images/icons/Frame.svg" class="img-fluid" alt="">
+        </div>
+        <div class="services__wrapper__slider">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+              <a href="services-en.html" class="swiper-slide tranding-slide">
+                <div class=" services__wrapper__slider__slide-content">
+                  <div class="services__wrapper__slider__slide-content__icon" >
+                    <img src="./images/icons/services/Group.svg" class="img-fluid" alt="">
+                  </div>
+                  <div class="services__wrapper__slider__slide-content__head">
+                    <h5>تصمــيـــــم المـــــســـــاحـــات الداخــليــــة</h5>
+                  </div>
+                  <div class="services__wrapper__slider__slide-content__text">
+                    <p>تقوم شركة نوشن بتصميم المباني السكنية والتجارية من جميع الأحجام، بما في ذلك المنازل والفلل والشقق السكنية والمراكز التجارية والمولات والمستشفيات والمدارس وغيرها.</p>
+                  </div>
+                </div>
+              </a>
+              <a href="services-en.html" class="swiper-slide tranding-slide">
+                <div class=" services__wrapper__slider__slide-content">
+                  <div class="services__wrapper__slider__slide-content__icon" >
+                    <img src="./images/icons/services/Frame 850.svg" class="img-fluid" alt="">
+                  </div>
+                  <div class="services__wrapper__slider__slide-content__head">
+                    <h5>تصـــميـم المبـــاني السـكنية والتجــــاريــــة</h5>
+                  </div>
+                  <div class="services__wrapper__slider__slide-content__text">
+                    <p>تصميم المساحات الداخلية: تقوم شركة نوشن بتصميم المساحات الداخلية للمباني السكنية والتجارية، بما في ذلك الغرف والمطبخ والحمامات وغرف المعيشة وغرف الطعام وغيرها.</p>
+                  </div>
+                </div>
+              </a>
+              <a href="services-en.html" class="swiper-slide tranding-slide">
+                <div class=" services__wrapper__slider__slide-content">
+                  <div class="services__wrapper__slider__slide-content__icon" >
+                    <img src="./images/icons/services/architect.svg" class="img-fluid" alt="">
+                  </div>
+                  <div class="services__wrapper__slider__slide-content__head">
+                    <h5>إدارة المشـــــاريـــع</h5>
+                  </div>
+                  <div class="services__wrapper__slider__slide-content__text">
+                    <p>تقوم شركة نوشن بإدارة المشاريع الهندسية والتصميمية من البداية إلى النهاية، بما في ذلك التخطيط والتصميم والتنفيذ والتسليم.</p>
+                  </div>
+                </div>
+              </a>
+              <a href="services-en.html" class="swiper-slide tranding-slide">
+                <div class=" services__wrapper__slider__slide-content">
+                  <div class="services__wrapper__slider__slide-content__icon" >
+                    <img src="./images/icons/services/planning.svg" class="img-fluid" alt="">
+                  </div>
+                  <div class="services__wrapper__slider__slide-content__head">
+                    <h5>تصميم المناظر الطبيعية</h5>
+                  </div>
+                  <div class="services__wrapper__slider__slide-content__text">
+                    <p>تقوم شركة نوشن بتصميم المناظر الطبيعية للحدائق والشرفات والنوافذ والأسطح وغيرها.</p>
+                  </div>
+                </div>
+              </a>
+              <a href="services-en.html" class="swiper-slide tranding-slide">
+                <div class=" services__wrapper__slider__slide-content">
+                  <div class="services__wrapper__slider__slide-content__icon" >
+                    <img src="./images/icons/services/architect (2).svg" class="img-fluid" alt="">
+                  </div>
+                  <div class="services__wrapper__slider__slide-content__head">
+                    <h5>الاستشـــارات الهنــــدسية</h5>
+                  </div>
+                  <div class="services__wrapper__slider__slide-content__text">
+                    <p>تقدم شركة نوشن الاستشارات الهندسية للمشاريع الهندسية والتصميمية، بما في ذلك دراسة الجدوى والتصميم والتنفيذ والتسليم.</p>
+                  </div>
+                </div>
+              </a>
+              </div>
+              <div class="tranding-slider-control">
+                <div class="swiper-button-prev slider-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+                <div class="swiper-button-next slider-arrow">
+                  <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="services__best-company main-bg"  style="background-image: url(./images/home/services-des.svg);">
+        <div class="row align-items-center w-100">
+          <div class="  col-7 col-sm-6 ">
+            <h2>أفـضــــل الشـــــركات المــــتخصصـــة فــي  الهندسة المعمارية والتصميم الداخــلي </h2>
+          </div>
+        </div>
+      </div>
+      <div class="services__list">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="services__list__ul " >
+              <li>
+                <img src="./images/icons/house-sketch.svg" class="img-fluid" alt="">
+                <p>ابتكار حلول جديدة وإبداعية لتصميم المساحات.</p>
+              </li>
+              <li>
+                <img src="./images/icons/team.svg" class="img-fluid" alt="">
+                <p>فريق عمل مـن ذوي الخبرة والكفاءة العالية.</p>
+              </li>
+              <li>
+                <img src="./images/icons/blueprint (1).svg" class="img-fluid" alt="">
+                <p>تقديم مجموعة من الخدمات الهندسية والتصميمية.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="services__list__ul ">
+              <li>
+                <img src="./images/icons/achievement.svg" class="img-fluid" alt="">
+                <p>الاهتمام بجودة العمل ورضا العملاء.</p>
+              </li>
+              <li>
+                <img src="./images/icons/project-management 1.svg" class="img-fluid" alt="">
+                <p>تنفيذ أهم المشاريع في المملكة العربية السعودية</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end services section  -->
+
+  <section class="important-projects pt-0 ">
+    <div class="container">
+      <div class="important-projects__wrapper main-bg" >
+        <div class="main-head">
+          <h3>أهم مشاريعنا</h3>
+          <img src="./images/icons/Frame.svg" class="img-fluid" alt="">
+        </div>
+        <div class="important-projects__wrapper__cards">
+          <div class="important-projects__wrapper__cards__card">
+            <a href="project-en.html" class="important-projects__wrapper__cards__card__img">
+              <img src="./images/home/important-projects/Rectangle (1).png" class="img-fluid" alt="">
+            </a>
+            <div class="important-projects__wrapper__cards__card__head">
+              <h4>صالون رجالي</h4>
+            </div>
+            <div class="important-projects__wrapper__cards__card__text">
+              <p>مشروع تجاري</p>
+            </div>
+            <img src="./images/home/important-projects/Vector (1).png" class="img-fluid" alt="">
+          </div>
+          <div class="important-projects__wrapper__cards__card">
+            <a href="project-en.html" class="important-projects__wrapper__cards__card__img">
+              <img src="./images/home/important-projects/Rectangle (2).png" class="img-fluid" alt="">
+            </a>
+            <div class="important-projects__wrapper__cards__card__head">
+              <h4>شركة خاصة</h4>
+            </div>
+            <div class="important-projects__wrapper__cards__card__text">
+              <p>مشروع اداري</p>
+            </div>
+            <img src="./images/home/important-projects/Vector (1).png" class="img-fluid" alt="">
+          </div>
+          <div class="important-projects__wrapper__cards__card">
+            <a href="project-en.html" class="important-projects__wrapper__cards__card__img">
+              <img src="./images/home/important-projects/Rectangle (3).png" class="img-fluid" alt="">
+            </a>
+            <div class="important-projects__wrapper__cards__card__head">
+              <h4>سي سولت</h4>
+            </div>
+            <div class="important-projects__wrapper__cards__card__text">
+              <p>مشروع تجاري</p>
+            </div>
+            <img src="./images/home/important-projects/Vector (1).png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end important-projects section  -->
+
+<!-- start size-notion section  -->
+  <section class="size-notion pt-0 ">
+    <div class="container size-notion-container">
+      <div class="size-notion__wrapper" >
+        <div class="main-head">
+          <h3>أبعاد نوشـــن</h3>
+          <img src="./images/icons/Frame.svg" class="img-fluid" alt="">
+        </div>
+        <div class="size-notion__wrapper__img">
+          <img src="./images/home/services-des.svg" class="img-fluid" alt="">
+          <img src="./images/home/services-mob.svg" class="img-fluid d-none" alt="">
+        </div>
+        <div class="size-notion__wrapper__boxs">
+          <div class="size-notion__wrapper__boxs__box">
+            <p>نعتبر البشر أولوية في تصاميمنا حيث يمكنهم تحقيق جميع احتياجاتهم للعيش بجودة عالية من الحياة.</p>
+          </div>
+          <div class="size-notion__wrapper__boxs__box">
+            <p>ننظر إلى الأبعاد الثلاثة للمكان لإنشاء بيئة جاذبة للفرد والعائلة والمجتمع.</p>
+          </div>
+          <div class="size-notion__wrapper__boxs__box">
+            <p>نضع في اعتبارنا ان تكون تصاميمنا مستدامة وذكية لتدوم لفترة طويلة</p>
+          </div>
+        </div>
+        <img src="./images/home/Rectangle (7).png" class="img-fluid main-bg" alt="">
+      </div>
+    </div>
+  </section>
+<!-- end size-notion section  -->
+
+<!-- start working section  -->
+  <section class="working pt-0 " >
+    <div class="container working-container">
+      <div class="working__wrapper main-bg" >
+        <div>
+          <div class="main-head">
+            <h3>أعمال التنفيذ</h3>
+            <img src="./images/icons/Frame.svg" class="img-fluid" alt="">
+          </div>
+          <div class="working__wrapper__video">
+            <video controls >
+              <source  src="https://placehold.co/1920x900.mp4"  type="video/mp4" >
+            </video>
+            <div class="working__wrapper__video__bg" >
+              <img src="./images/home/working/Rectangle (8).png"  alt="">
+            </div>
+            <div class="play-btn" ><img src="./images/icons/Group 55.svg" alt=""></div>
+          </div>
+          <div class="working__wrapper__head">
+            <h4>اسم المشروع</h4>
+          </div>
+          <div class="working__wrapper__text">
+            <p>تفاصيل عن المشروع ومدة تنفيذه </p>
+          </div>
+          <svg class="main-border" xmlns="http://www.w3.org/2000/svg" width="1440" height="6" viewBox="0 0 1440 6" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6501 1.9328C61.6946 1.50709 56.086 0.921754 94.9148 0.682297C124.899 0.496052 132.881 0.389627 163.081 0.256595C196.733 0.070351 230.384 0.256595 264.036 0.070351C300.06 -0.115893 336.085 0.123564 372.109 0.15017C408.134 0.203383 444.374 0.176776 480.398 0.256595C517.933 0.363021 555.467 0.682297 593.002 0.629084C623.634 0.575872 654.049 1.08139 684.681 0.762116C706.9 0.549265 729.55 0.815329 751.769 0.841935C788.872 0.868541 825.975 0.841935 863.078 0.815329C910.535 0.815329 957.993 0.788722 1005.45 0.788722C1034.79 0.788722 1063.91 0.629084 1093.03 0.841935C1155.37 1.34746 1217.93 1.16121 1280.27 2.03922C1311.77 2.49153 1343.26 3.05026 1374.97 3.28972C1386.84 3.36954 1420.06 3.84845 1431.92 4.14112C1435.8 4.24755 1440.76 4.30076 1439.9 5.12556C1439.25 5.87053 1434.51 5.87053 1430.41 5.87053C1402.8 5.84393 1353.4 5.81732 1325.79 5.84393C1297.74 5.84393 1269.49 5.95035 1241.66 5.76411C1201.1 5.49805 1160.77 5.60447 1120.21 5.36501C1057.87 5.01913 995.743 4.69985 933.401 4.75307C877.315 4.77967 821.445 4.54022 765.359 4.67325C726.53 4.75307 687.917 4.77967 649.088 4.69986C594.728 4.56682 540.583 4.56682 486.223 4.56682C448.904 4.56682 411.801 4.67325 374.482 4.69986C336.085 4.72646 297.903 4.59343 259.506 4.69986C219.598 4.83289 179.691 5.23198 139.784 5.39162C78.089 5.63108 82.619 5.84393 21.3558 4.24755C15.7472 4.11452 10.3543 3.92827 4.96146 3.76863C1.72572 3.66221 0 3.36954 0 2.89062C0 2.3851 2.15716 2.14565 5.17717 2.06583C8.19719 1.98601 11.4329 1.90619 14.6687 1.87958C17.473 1.85298 20.2773 1.9328 22.6501 1.9328ZM31.4945 3.2099C57.1646 4.19433 61.2632 3.98148 87.3648 4.08791C141.941 4.30076 152.295 4.0347 206.871 3.60899C251.093 3.26311 295.315 2.8108 339.752 2.57135C396.701 2.25207 453.434 2.11904 510.383 1.9328C328.319 1.40067 213.127 0.629084 31.4945 3.2099ZM1349.52 4.43379C1215.56 2.09243 1081.17 3.15669 946.775 3.31633C1080.95 3.74203 1215.13 4.67325 1349.52 4.43379Z" fill="black"/>
+          </svg>
+        </div>
+        <div class="working__wrapper__boxs" >
+          <div class="working__wrapper__boxs__box">
+            <div class="working__wrapper__boxs__box__img">
+              <img src="./images/home/working/small/Rectangle (9).png" class="img-fluid" alt="">
+            </div>
+            <div class="working__wrapper__boxs__box__head">
+              <h6>اسم المشروع</h6>
+            </div>
+          </div>
+          <div class="working__wrapper__boxs__box">
+            <div class="working__wrapper__boxs__box__img">
+              <img src="./images/home/working/small/Rectangle (8).png" class="img-fluid" alt="">
+            </div>
+            <div class="working__wrapper__boxs__box__head">
+              <h6>اسم المشروع</h6>
+            </div>
+          </div>
+          <div class="working__wrapper__boxs__box">
+            <div class="working__wrapper__boxs__box__img">
+              <img src="./images/home/working/small/Rectangle (10).png" class="img-fluid" alt="">
+            </div>
+            <div class="working__wrapper__boxs__box__head">
+              <h6>اسم المشروع</h6>
+            </div>
+          </div>
+          <div class="working__wrapper__boxs__box">
+            <div class="working__wrapper__boxs__box__img">
+              <img src="./images/home/working/small/Rectangle (9).png" class="img-fluid" alt="">
+            </div>
+            <div class="working__wrapper__boxs__box__head">
+              <h6>اسم المشروع</h6>
+            </div>
+          </div>
+          <div class="working__wrapper__boxs__box">
+            <div class="working__wrapper__boxs__box__img">
+              <img src="./images/home/working/small/Rectangle (8).png" class="img-fluid" alt="">
+            </div>
+            <div class="working__wrapper__boxs__box__head">
+              <h6>اسم المشروع</h6>
+            </div>
+          </div>
+          <div class="working__wrapper__boxs__box">
+            <div class="working__wrapper__boxs__box__img">
+              <img src="./images/home/working/small/Rectangle (10).png" class="img-fluid" alt="">
+            </div>
+            <div class="working__wrapper__boxs__box__head">
+              <h6>اسم المشروع</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end working section  -->
+
+<!-- end customers section  -->
+  <section class="customers pt-0 " >
+    <div class="container">
+      <div class="customers__wrapper">
+        <div class="customers__wrapper__header main-bg"  style="background-image: url(./images/home/customer.svg);">
+          <div class="row align-items-center w-100">
+            <div class=" col-6 ">
+              <h2 class="text-center" >عمـــلاؤنــــا </h2>
+            </div>
+          </div>
+        </div>
+        <div class="customers__wrapper__body">
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (14).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (15).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (16).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (17).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (18).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (19).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (20).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (21).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (22).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (23).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (24).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (25).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (26).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (27).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (29).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (30).png" class="img-fluid" alt=""></div>
+            
+              <div class="customers__wrapper__body__customer"><img src="./images/home/customers/Rectangle (31).png" class="img-fluid" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end customers section  -->
+
+<!-- start footer section -->
+  <footer class="footer " >
+    <div class="container">
+      <div class="footer__wrapper ">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="row justify-content-center  row-footer">
+              <div class="col-12">
+                <div class="row justify-content-center">
+                  <div class="col-sm-3">
+                    <div class="footer__wrapper__logo">
+                      <img src="./images/logo/logo.svg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4"><a href="#" class="footer__wrapper__info"><p><i class="bi bi-geo-alt-fill"></i> <span>عنوان الشركة</span></p></a></div>
+              <div class="col-4"><a href="mailto:test@gmail.com" class="footer__wrapper__info"><p><i class="bi bi-envelope-fill"></i> <span>test@gmail.com</span></p></a></div>
+              <div class="col-4"><a href="tel:747347474747" class="footer__wrapper__info"><p><i class="bi bi-telephone-fill"></i> <span>747347474 </span></p></a></div>
+              <div class="col-3 text-center">
+                <a href="#" class="footer__wrapper__social" ><i class="bi bi-facebook"></i></a>
+                <a href="#" class="footer__wrapper__social" ><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./images/footer-border.png" class="img-fluid main-border" alt="">
+        <img src="./images/footer.png" class="img-fluid main-bg" alt="">
+      </div>
+    </div>
+  </footer>
+<!-- end footer section -->
+
+  <!-- start main files  -->
+
+  <!-- jquery.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
+
+  <!-- bootstrap.bundle.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+
+  <!-- end main files  -->
+
+  <!-- strat Specific file -->
+
+  <!-- Js for swiper  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- end Specific file -->
+
+
+  <!-- main  -->
+  <script src="./js/main.js"></script>
+  <script src="./js/home.js"></script>
+
+</body>
+</html>

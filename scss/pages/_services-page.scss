@@ -1,0 +1,286 @@
+/*-----------
+  services-page
+------------*/
+
+.services-page {
+  padding-bottom: 0;
+  &:first-of-type {
+    padding-top: 0;
+  }
+  .main-title.not {
+    border: 0;
+  }
+  .main-text {
+    margin-bottom: 20px;
+    @include responsive(max,991px) {
+      margin-bottom: 5px;
+    }
+    * {
+      font-size: $font-28;
+      text-align: justify;
+      line-height: 38px;
+      @include responsive(max,1100px) {
+      font-size: $font-24;
+      line-height: normal;
+      color: $text-gray-color;
+      }
+      @include responsive(max,991px) {
+      font-size: $font-22;
+      }
+      @include responsive(max,767px) {
+      font-size: $font-18;
+      }
+      @include responsive(max,650px) {
+      font-size: $font-16;
+      }
+      @include responsive(max,575px) {
+      font-size: $font-14;
+      color: $text-gray-color;
+      }
+    }
+  }
+  .read-more {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+    @include responsive(max,1100px) {
+      margin-bottom: 30px;
+    }
+    @include responsive(max,767px) {
+      margin-bottom: 18px;
+    }
+    border: 0;
+    * {
+      font-size: $font-30;
+      font-weight: $fw-600;
+      @include responsive(max,991px) {
+        font-size: $font-22;
+      }
+    }
+    span {
+      border-bottom: 1px solid $black-color;
+    }
+    i{
+      transform: scaleX($n);
+      &:before {
+      font-size: $font-22;
+      font-weight: $fw-600 !important;
+      }
+    }
+    @include responsive(max,575px) {
+    margin-bottom: 20px;
+    * {
+      font-size: $font-16;
+    }
+    i{
+      &:before {
+      font-size: $font-16;
+      }
+    }
+    }
+  }
+  &--right {
+    .main-text {
+      @include responsive(min,991px) {
+        margin-#{$e}: 50px;
+      }
+      @include responsive(max,991px) {
+        margin-#{$e}: 20px;
+      }
+      @include responsive(max,400px) {
+        margin-#{$e}: 0px;
+      }
+    }
+    &:last-of-type {
+      margin-bottom: 0 !important;
+    }
+  }
+  &__wrapper {
+    @include static-main-bg(275px, start, $font-50);
+    @include hero-main();
+    display: block;
+    h2:not(.not) {
+      font-size: $font-70;
+      margin-bottom:60px;
+    }
+    @include responsive(max,1100px) {
+      @include static-main-bg(200px, start, $font-50);
+    display: block;
+      h2:not(.not) {
+        font-size: $font-50;
+        margin-bottom:40px;
+      }
+    }
+    @include responsive(max,991px) {
+      .main-title.not {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    @include responsive(max,767px) {
+      .main-title.not {
+        h2 {
+          font-size: $font-30 !important;
+        }
+      }
+    }
+    @include responsive(max,575px) {
+      .main-title.not {
+        h2 {
+          font-size: $font-20 !important;
+        }
+      }
+    }
+    @include responsive(max,768px) {
+      @include static-main-bg(150px, start, $font-30);
+    display: block;
+    h2:not(.not) {
+      font-size: $font-30;
+      margin-bottom:60px;
+    }
+    }
+    @include responsive(max,575px) {
+      @include static-main-bg(100px, start, $font-20);
+
+    display: block;
+      margin-bottom: 0px ;
+      h2:not(.not) {
+        font-size: $font-18 !important;
+        margin-bottom:25px !important;
+      }
+    }
+    &--first {
+      @include responsive(max,575px) {
+        background-image:url(../../images/services/serv-mob.svg) !important;
+      }
+    }
+
+    &--second ,&--third ,&--sixth {
+      @include static-main-bg(440px, start, $font-50);
+      @include responsive(max,1100px)  {
+        @include static-main-bg(300px, start, $font-40);
+      }
+      @include responsive(max,991px)  {
+        @include static-main-bg(250px, start, $font-30);
+      }
+      @include responsive(max,991px)  {
+        @include static-main-bg(250px, start, $font-30);
+      }
+      @include responsive(max,991px)  {
+        @include static-main-bg(160px, start, $font-30);
+      }
+      @include responsive(max,575px)  {
+        margin-bottom: 20px !important;
+      }
+      @include responsive(max,400px)  {
+        @include static-main-bg(105px, start, $font-30);
+        margin-bottom: 20px !important;
+      }
+    }
+    &--third {
+      @include responsive(max,991px)  {
+        @include static-main-bg(187px, start, $font-30);
+        > .row {
+          align-items: flex-end !important; 
+        }
+      }
+      @include responsive(max,400px)  {
+        @include static-main-bg(125px, start, $font-30);
+        margin-bottom: 20px !important;
+      }
+    }
+    &--forth ,&--sixth {
+      @include static-main-bg(490px, start, $font-50);
+      @include responsive(max,1100px)  {
+        @include static-main-bg(370px, start, $font-40);
+      }
+      @include responsive(max,991px)  {
+        @include static-main-bg(250px, start, $font-30);
+        
+      }
+      @include responsive(max,767px)  {
+        @include static-main-bg(165px, start, $font-30);
+        h2 {
+          text-align: start;
+          br:first-of-type {
+            display: none;
+          }
+        }
+      }
+      @include responsive(max,400px)  {
+        @include static-main-bg(112px, start, $font-30);
+      }
+      .main-title {
+        * {
+          line-height: 1 !important;
+        }
+      }
+    } 
+    &--fifth {
+      @include static-main-bg(321px, start, $font-50);
+      @include responsive(max,991px)  {
+        @include static-main-bg(215px, start, $font-30);
+      }
+      @include responsive(max,650px)  {
+        @include static-main-bg(176px, start, $font-30);
+        margin-bottom: 20px ;
+      }
+      @include responsive(max,575px)  {
+        @include static-main-bg(135px, start, $font-30);
+        margin-bottom: 20px ;
+        > .row > [class*="col-"] {
+          margin-top: auto;
+        }
+      }
+      @include responsive(max,575px)  {
+        @include static-main-bg(92px, start, $font-30);
+        margin-bottom: 20px ;
+        > .row > [class*="col-"] {
+          margin-top: auto;
+        }
+      }
+    }
+    &--sixth {
+      @include responsive(max,575px)  {
+        display: block;
+        > .row {
+
+          > [class*="col-"] {
+            margin-top: auto;
+            h2 {
+              text-align: end !important;
+            }
+          }
+        }
+      }
+    }
+
+    &--second , &--forth {
+      @include responsive(max,575px) {
+        justify-content: end;
+        margin-bottom: 20px ;
+        > .row {
+          align-items: flex-end !important;
+        }
+        .main-title.not {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+  }
+  @if $s == left {
+  &--right {
+      .services-page__wrapper {
+        justify-content: start;
+      }
+    }
+    &--left {
+      .services-page__wrapper {
+        justify-content: end;
+      }
+    }
+  }
+}

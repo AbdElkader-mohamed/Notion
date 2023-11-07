@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion</title>
+
+  <link rel="shortcut icon" href="./images/logo/logo.svg" type="image/x-icon">
+
+  <!-- start main files  -->
+
+  <!-- Bootstrap 5  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.rtl.min.css"/>
+
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css" />
+
+  <!-- end main fils  -->
+
+  <!-- main file -->
+  <link rel="stylesheet" href="./css/main-rtl.css">
+</head>
+<body >
+
+<!-- start header  -->
+<header class="header ">
+  <div class="container accordion-body head">
+    <div class="header__wrapper">
+      <nav>
+        <ul class="header__wrapper__list" >
+          <li>
+            <button type="button" class=" btn nav-toggle  ">
+              <i class="bi bi-list"></i>
+            </button>
+          </li>
+          <li class="header__wrapper__list__nav-item header__wrapper__list__nav-item--logo">
+            <a href="./user.html" class="nav-link"><img src="./images/user.png" class="img-fluid" alt="user"></a>
+          </li>
+          <li class="header__wrapper__list__nav-item header__wrapper__list__nav-item--cart">
+            <a href="./shopping-cart.html" class="nav-link"><img src="./images/icons/li_shopping-cart.svg" class="img-fluid" alt="li_shopping-cart"></a>
+            <span>1</span>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="./index.html" class="nav-link">الرئيسية</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="about.html" class="nav-link active">من نحن</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="shop.html" class="nav-link">المتجر</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="projects.html" class="nav-link">مشاريعنا</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="services.html" class="nav-link">خدماتنا </a>
+          </li>
+          <ul class="header__wrapper__list header__wrapper__list--slice" >
+          <li class="header__wrapper__list__nav-item">
+            <a href="projects.html" class="nav-link">مشاريعنا</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="services.html" class="nav-link">خدماتنا </a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="jop.html" class="nav-link">التوظيف</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="price.html" class="nav-link">عرض السعر</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="contact.html" class="nav-link">تواصل معنا</a>
+          </li>
+          <li class="header__wrapper__list__nav-item">
+            <a href="./login.html" class="nav-link">تسجيل الدخول</a>
+          </li>
+          </ul>
+          <li class="header__wrapper__list__nav-item">
+            <a href="./about-en.html" class="nav-link">EN</a>
+          </li>
+        </ul>
+      </nav>
+      <svg class="main-border" xmlns="http://www.w3.org/2000/svg" width="1440" height="6" viewBox="0 0 1440 6" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6501 1.9328C61.6946 1.50709 56.086 0.921754 94.9148 0.682297C124.899 0.496052 132.881 0.389627 163.081 0.256595C196.733 0.070351 230.384 0.256595 264.036 0.070351C300.06 -0.115893 336.085 0.123564 372.109 0.15017C408.134 0.203383 444.374 0.176776 480.398 0.256595C517.933 0.363021 555.467 0.682297 593.002 0.629084C623.634 0.575872 654.049 1.08139 684.681 0.762116C706.9 0.549265 729.55 0.815329 751.769 0.841935C788.872 0.868541 825.975 0.841935 863.078 0.815329C910.535 0.815329 957.993 0.788722 1005.45 0.788722C1034.79 0.788722 1063.91 0.629084 1093.03 0.841935C1155.37 1.34746 1217.93 1.16121 1280.27 2.03922C1311.77 2.49153 1343.26 3.05026 1374.97 3.28972C1386.84 3.36954 1420.06 3.84845 1431.92 4.14112C1435.8 4.24755 1440.76 4.30076 1439.9 5.12556C1439.25 5.87053 1434.51 5.87053 1430.41 5.87053C1402.8 5.84393 1353.4 5.81732 1325.79 5.84393C1297.74 5.84393 1269.49 5.95035 1241.66 5.76411C1201.1 5.49805 1160.77 5.60447 1120.21 5.36501C1057.87 5.01913 995.743 4.69985 933.401 4.75307C877.315 4.77967 821.445 4.54022 765.359 4.67325C726.53 4.75307 687.917 4.77967 649.088 4.69986C594.728 4.56682 540.583 4.56682 486.223 4.56682C448.904 4.56682 411.801 4.67325 374.482 4.69986C336.085 4.72646 297.903 4.59343 259.506 4.69986C219.598 4.83289 179.691 5.23198 139.784 5.39162C78.089 5.63108 82.619 5.84393 21.3558 4.24755C15.7472 4.11452 10.3543 3.92827 4.96146 3.76863C1.72572 3.66221 0 3.36954 0 2.89062C0 2.3851 2.15716 2.14565 5.17717 2.06583C8.19719 1.98601 11.4329 1.90619 14.6687 1.87958C17.473 1.85298 20.2773 1.9328 22.6501 1.9328ZM31.4945 3.2099C57.1646 4.19433 61.2632 3.98148 87.3648 4.08791C141.941 4.30076 152.295 4.0347 206.871 3.60899C251.093 3.26311 295.315 2.8108 339.752 2.57135C396.701 2.25207 453.434 2.11904 510.383 1.9328C328.319 1.40067 213.127 0.629084 31.4945 3.2099ZM1349.52 4.43379C1215.56 2.09243 1081.17 3.15669 946.775 3.31633C1080.95 3.74203 1215.13 4.67325 1349.52 4.43379Z" fill="black"/>
+      </svg>
+    </div>
+  </div>
+</header>
+<!-- end header  -->
+
+<!-- start section about  -->
+  <section class="about pt-lg pb-0">
+    <div class="container">
+      <div class="about__wrapper main-bg" style="background-image: url(./images/about/about.svg);">
+        <div class="row h-100">
+          <div class="col-4">
+            <h2>من نحن </h2>
+          </div>
+        </div>
+      </div>
+      <div class="main-text" >
+        <p>شركة سعودية متخصصة في الهندسة المعمارية والتصميم الداخلي، تأسست عام  "" على يد مجموعة من الكوادر الهندسية، حيث تقع الشركة في مدينة " " بالمملكة العربية السعودية، وتضم فريقًا من المهندسين المعماريين والمصممين الداخليين ذوي الخبرة الذين يتمتعون بشغف بإنشاء مساحات جميلة وعملية تلبي احتياجات عملائها. تقدم شركة نوشن مجموعة واسعة من الخدمات، وتسعى دائمًا إلى ابتكار حلول جديدة وإبداعية لتصميم المساحات، وتستخدم أحدث التقنيات والمواد في عملها، كما تهتم الشركة بجودة العمل ورضا العملاء، وتعمل  دائمًا على  تقديم أفضل الخدمات الممكنة. حققت شركة نوشن نجاحًا كبيرًا في مجال الهندسة المعمارية والتصميم الداخلي، وقد قامت بتنفيذ العديد من المشاريع الناجحة، حيث تتطلع دائمًا إلى أن تكون الشركة الرائدة في مجال الهندسة المعمارية والتصميم الداخلي في المملكة العربية السعودية، وتهدف إلى تقديم خدماتها إلى العملاء في جميع أنحاء العالم.</p>
+      </div>
+      <img src="./images/about/first-building-1.png" class="img-fluid main-bg" alt="">
+    </div>
+  </section>
+<!-- end section about  -->
+
+<!-- start section goals  -->
+  <section class="about goals pt-0">
+    <div class="container">
+      <div class="about__wrapper main-bg" style="background-image: url(./images/about/goals.svg);">
+        <div class="row h-100">
+          <div class="col-4">
+            <h2> الاهداف </h2>
+          </div>
+        </div>
+      </div>
+      <div class="goals__list">
+        <ul class="goals__list__ul not" >
+              <li>
+                <p>تقــــديم خدمـــات متمـــيزة وحلــول إبداعيــة لتصميم المساحات.</p>
+              </li>
+              <li>
+                <p>استخدام أحدث التقنيات والمواد في العــمل.</p>
+              </li>
+              <li>
+                <p>الاهتمـــام بجـــودة العمـــل ورضـــا العــــملاء.</p>
+              </li>
+        </ul>
+        <ul class="goals__list__ul not">
+              <li>
+                <p>خـــلق بيئة عمل إيجابية ومحفزة لأعضاء الفريق.</p>
+              </li>
+              <li>
+                <p>المــساهمــة في المجـــتمــع مــن خـلال مبادرات مختلفة. </p>
+              </li>
+        </ul>
+      </div>
+      <svg class="main-border" xmlns="http://www.w3.org/2000/svg" width="1438" height="3" viewBox="0 0 1438 3" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6501 0.987094C59.6946 0.769684 54.086 0.470747 92.9148 0.348454C122.899 0.253338 130.881 0.198986 161.081 0.131045C194.733 0.0359288 228.384 0.131045 262.036 0.0359288C298.06 -0.0591877 334.085 0.0631049 370.109 0.076693C406.134 0.103869 442.374 0.0902811 478.398 0.131045C515.933 0.185398 553.467 0.348454 591.002 0.321278C621.634 0.294102 652.049 0.552275 682.681 0.389219C704.9 0.280514 727.55 0.416395 749.769 0.429983C786.872 0.443571 823.975 0.429983 861.078 0.416395C908.535 0.416395 955.993 0.402807 1003.45 0.402807C1032.79 0.402807 1061.91 0.321278 1091.03 0.429983C1153.37 0.688156 1215.93 0.59304 1278.27 1.04145C1309.77 1.27244 1341.26 1.55779 1372.97 1.68009C1384.84 1.72085 1418.06 1.96543 1429.92 2.1149C1433.8 2.16926 1438.76 2.19643 1437.9 2.61766C1437.25 2.99813 1432.51 2.99813 1428.41 2.99813C1400.8 2.98454 1351.4 2.97095 1323.79 2.98454C1295.74 2.98454 1267.49 3.03889 1239.66 2.94378C1199.1 2.80789 1158.77 2.86225 1118.21 2.73995C1055.87 2.56331 993.743 2.40025 931.401 2.42743C875.315 2.44102 819.445 2.31872 763.359 2.38666C724.53 2.42743 685.917 2.44102 647.088 2.40025C592.728 2.33231 538.583 2.33231 484.223 2.33231C446.904 2.33231 409.801 2.38666 372.482 2.40025C334.085 2.41384 295.903 2.3459 257.506 2.40025C217.598 2.46819 177.691 2.67201 137.784 2.75354C76.089 2.87583 80.619 2.98454 19.3558 2.16926C13.7472 2.10132 8.35435 2.0062 2.96146 1.92467C-0.274276 1.87032 -2 1.72085 -2 1.47626C-2 1.21809 0.157155 1.0958 3.17717 1.05503C6.19719 1.01427 9.43292 0.973505 12.6687 0.959917C15.473 0.946329 18.2773 0.987094 20.6501 0.987094ZM29.4945 1.63932C55.1646 2.14208 59.2632 2.03337 85.3648 2.08773C139.941 2.19643 150.295 2.06055 204.871 1.84314C249.093 1.6665 293.315 1.4355 337.752 1.31321C394.701 1.15015 451.434 1.08221 508.383 0.987094C326.319 0.715332 211.127 0.321278 29.4945 1.63932ZM1347.52 2.26437C1213.56 1.06862 1079.17 1.61214 944.775 1.69367C1078.95 1.91108 1213.13 2.38666 1347.52 2.26437Z" fill="black"/>
+        </svg>
+    </div>
+  </section>
+<!-- end section goals  -->
+
+<!-- start section vision-message -->
+  <section class="about vision pb-0">
+    <div class="container">
+      <img src="./images/about/vision&message-mob.svg" class="img-fluid d-block d-md-none w-100" alt="">
+      <div class="about__wrapper vision--wrapper main-bg" style="background-image: url(./images/about/vision&message.svg);" >
+        <div class="row vision__slice">
+          <div class="col-6 col-md-4 col-sm-5 ">
+              <div class="vision__parent" ><h2 class="not" >رؤيتنــــا</h2></div>
+              <div class=" main-text">
+                <p>نسعى ان نكون الشركة الرائدة في مجال الهندسة المعمارية والتصميم الداخلي في المملكة العربية السعودية، ونهدف الى تقديم خدماتنا في جميع انحاء العالم</p>
+              </div>
+          </div>
+          <div class=" offset-md-4 offset-sm-2 col-6 col-md-4 col-sm-5 text-end">
+              <div class="vision__parent" ><h2 class="not" >رســـالتنا</h2></div>
+              <div class=" main-text">
+                <p>نؤمن باهمية التصميم في خلق مساحات جميلة وعملية تلبي احتياجات عملاءها، ونهدف الى ابتكار حلول جديدة وابداعية لتصميم المساحات، واستخدام احدث التقنيات والمواد من اجل تقديم افضل الخدمات الممكنة</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end section vision-message  -->
+
+<!-- start section valus -->
+  <section class="about vision values pt-0">
+    <div class="container">
+      <div class="about__wrapper values--wrapper main-bg" style="background-image: url(./images/about/values.svg) ;" >
+        <div class="row h-100 align-items-center">
+          <div class=" col-7 col-sm-5">
+            <h2 class="me-5" >قيمــــنا </h2>
+          </div>
+          <div class=" col-md-7 appendFrom">
+            <div class="row ">
+              <div class="col-6">
+                  <div class="values__parent" ><h2 class="not" >الابتـــــــــكار</h2></div>
+                  <div class=" main-text">
+                    <p>بابتكار حلول جديدة وإبداعية لتصـــميــــم الـــمســـاحــــات، وتـستخدم أحـــدث التقـــنيات والمواد في عملها.</p>
+                  </div>
+              </div>
+              <div class="col-6 text-sm-end">
+                  <div class="values__parent" ><h2 class="not" >الجــــــــــودة</h2></div>
+                  <div class=" main-text">
+                    <p>الاهتمام بجودة الـعمل ورضــــا العمــــــلاء، وتسعى دائمًا إلى تقديم أفضل الخدمات الممكنة.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-sm-5 appendTo">
+        <div class="col-6">
+          <div class="values__parent" ><h2 class="not" >التمــــــــــــــيز</h2></div>
+          <div class=" main-text">
+            <p>السعي إلى أن نكون رواد مجال الهندسة المعمارية والتصميم الداخلي في المملكة العربية السعودية.</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="values__parent" ><h2 class="not" >التعــــــــاون</h2></div>
+          <div class=" main-text">
+            <p>تؤمن الشركة بأهمية التعاون بين أعضاء الفريق، وتسعى دائمًا إلى خلق بيئة عمل إيجابية ومحفزة.</p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+<!-- end section valus  -->
+
+<!-- start footer section -->
+  <footer class="footer "  >
+  <div class="container">
+    <div class="footer__wrapper ">
+      <div class="row justify-content-end">
+        <div class="col-lg-7">
+          <div class="row justify-content-center  row-footer">
+            <div class="col-12">
+              <div class="row justify-content-center">
+                <div class="col-sm-3">
+                  <div class="footer__wrapper__logo">
+                    <img src="./images/logo/logo.svg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4"><a href="#" class="footer__wrapper__info"><p><i class="bi bi-geo-alt-fill"></i> <span>عنوان الشركة</span></p></a></div>
+            <div class="col-4"><a href="mailto:test@gmail.com" class="footer__wrapper__info"><p><i class="bi bi-envelope-fill"></i> <span>test@gmail.com</span></p></a></div>
+            <div class="col-4"><a href="tel:747347474747" class="footer__wrapper__info"><p><i class="bi bi-telephone-fill"></i> <span>747347474 </span></p></a></div>
+            <div class="col-3 text-center">
+              <a href="#" class="footer__wrapper__social" ><i class="bi bi-facebook"></i></a>
+              <a href="#" class="footer__wrapper__social" ><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+<img src="./images/footer-border.png" class="img-fluid main-border" alt="">
+      <img src="./images/footer.png" class="img-fluid main-bg" alt="">
+    </div>
+  </div>
+  </footer>
+<!-- end footer section -->
+
+  <!-- start main fils  -->
+
+  <!-- jquery.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
+
+  <!-- bootstrap.bundle.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+
+  <!-- end main fils  -->
+
+  <!-- main  -->
+  <script src="./js/main.js"></script>
+  <!-- spcific file  -->
+  <script src="./js/vendors/select.js"></script>
+  <script>
+    if(window.innerWidth <= 768) {
+      $(".appendFrom").appendTo(".appendTo");
+    }
+  </script>
+</body>
+</html>

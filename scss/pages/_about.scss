@@ -1,0 +1,300 @@
+/*--------
+  about
+-----------*/
+
+.about {
+  padding-bottom: 0;
+  &:first-of-type {
+
+    @include responsive(max,575px) {
+      padding-top: 20px !important;
+    }
+  }
+  &.vision:not(&.values) {
+    @include responsive(max,767px) {
+      padding-top: 0;
+    }
+  }
+  .container {
+    position: relative;
+    img.main-bg {
+      @include fly-main-bg(-100px,$s);
+      @include responsive(max,992px) {
+        display: none;
+      }
+    }
+  }
+  &.goals{
+    position: relative;
+    @include responsive(min,575px) {
+      padding-bottom: 30px;
+    }
+    .main-border {
+      top: auto;
+      bottom: -30px;
+      @include responsive(max,768px) {
+        display: none;
+      }
+    }
+  }
+  .main-text {
+    @include responsive(min,768px) {
+      margin: 0 50px;
+    }
+    * {
+      font-size: $font-28;
+      text-align: justify;
+      @include responsive(max,992px) {
+        font-size: $font-22 !important;
+      }
+      @include responsive(max,575px) {
+        font-size: $font-16 !important;
+      }
+    }
+  }
+  &__wrapper {
+    @include static-main-bg(375px, start, $font-50);
+    @include hero-main();
+    @include responsive(max,1100px) {
+      @include static-main-bg(300px, start, $font-50);
+      display: block;
+      margin-bottom: 30px;
+      h2 {
+        margin-bottom: 20px !important;
+      }
+    }
+    @include responsive(max,900px) {
+      @include static-main-bg(230px, start, $font-50);
+      display: block;
+      margin-bottom: 30px;
+      h2 {
+        margin-bottom: 20px !important;
+      }
+    }
+    @include responsive(max,720px) {
+      @include static-main-bg(180px, start, $font-30);
+      display: block;
+      margin-bottom: 30px;
+      h2 {
+        margin-bottom: 20px !important;
+      }
+    }
+    @include responsive(max,575px) {
+      @include static-main-bg(125px, start, $font-20);
+      display: block;
+      margin-bottom: 30px;
+      h2 {
+        margin-bottom: 20px !important;
+      }
+    }
+    @include responsive(max,425px) {
+      @include static-main-bg(85px, start, $font-20);
+      display: block;
+      margin-bottom: 30px;
+      h2 {
+        margin-bottom: 20px !important;
+      }
+    }
+    @include responsive(max,350px) {
+      @include static-main-bg(83px, start, $font-20);
+      display: block;
+      margin-bottom: 30px;
+      h2 {
+        margin-bottom: 20px !important;
+      }
+    }
+    &.vision--wrapper {
+    @include static-main-bg(400px, start, $font-50);
+    display: block;
+    > .row {
+      align-items: flex-start;
+    }
+    @include responsive(max,992px) {
+      @include static-main-bg(370px, start, $font-36);
+      margin-bottom: 10px;
+      p {
+        font-size: $font-22 !important;
+        
+      }
+    }
+    @include responsive(max,767px) {
+      background-image: none !important;
+      min-height: auto;
+      display: block;
+    }
+    }
+    &.values--wrapper {
+    @include static-main-bg(275px, start, $font-50);
+    display: block;
+    > .row {
+      align-items: flex-start;
+    }
+    @include responsive(max,768px) {
+      @include static-main-bg(156px, start, $font-30);
+      margin-bottom: 30px;
+      justify-content: end;
+      align-items: flex-end;
+      > .row {
+        .col-7.col-sm-5 {
+          margin-top: auto;
+        }
+      }
+    }
+    @include responsive(max,575px) {
+      @include static-main-bg(136px, start, $font-20);
+      margin-bottom: 20px !important;
+    }
+    @include responsive(max,490px) {
+      @include static-main-bg(162px, start, $font-20);
+      margin-bottom: 20px !important;
+      background-image: url(../../images/about/values-mob.svg) !important;
+    }
+    @include responsive(max,390px) {
+      @include static-main-bg(124px, start, $font-20);
+      margin-bottom: 20px !important;
+    }
+    }
+
+  }
+  .goals__list {
+    @include list($font-28,normal);
+    display: flex;
+    gap: 100px;
+    @include responsive(max,992px) {
+      gap: 60px;
+    }
+    @include responsive(max,575px) {
+      flex-direction: column;
+      gap: 0px;
+    }
+    ul {
+      width: 100%;
+    }
+    li {
+      p {
+        position: relative;
+        #{$e}: -30px;
+        @include responsive(max,992px) {
+          #{$e}: -20px;
+          font-size: $font-20;
+          line-height: normal;
+        }
+        @include responsive(max,575px) {
+          font-size: $font-16;
+        }
+      }
+      &::marker {
+        content: url(../../images/icons/bullet5.svg);
+        @include responsive(max,575px) {
+          position: relative;
+          bottom: 10px;
+          width: 18px;
+        }
+      }
+      &:first-of-type {
+        &::marker {
+          content: url(../../images/icons/bullet1.svg);
+        }
+      }
+      &:nth-of-type(2) {
+        &::marker {
+          content: url(../../images/icons/bullet2.svg);
+
+        }
+      }
+      &:last-of-type {
+        &::marker {
+          content: url(../../images/icons/bullet3.svg);
+        }
+      }
+    }
+  }
+  &.vision {
+    .main-text {
+      @include responsive(min,768px) {
+        margin: 0 10px;
+      }
+      * {
+
+        @include responsive(max,1100px) {
+          // font-size: $font-24 !important;
+        }
+        @include responsive(max,767px) {
+          font-size: $font-20 !important;
+        }
+        @include responsive(max,575px) {
+          font-size: $font-18 !important;
+        }
+        @include responsive(max,400px) {
+          font-size: $font-14 !important;
+        }
+      }
+    }
+    .vision__parent {
+      @include responsive(min,768px) {
+        margin: 0 10px;
+      }
+
+      * {
+        font-size: $font-50;
+        line-height: normal;
+        margin-bottom: 12px;
+        @include responsive(max,992px) {
+          font-size: $font-40;
+          margin-bottom: 5px !important;
+        }
+        @include responsive(max,575px) {
+          font-size: $font-22;
+        }
+      }
+    }
+  }
+  &.values {
+    .appendTo {
+      [class*="col-"] {
+        padding:0 15px ;
+      }
+    }
+    .about__wrapper {
+        justify-content: left;
+        > .row {
+          @include responsive(max,992px) {
+            align-items: flex-start !important;
+            h2:not(.not) {
+              text-align: center;
+              margin-top: 40px;
+            }
+          }
+        }
+    }
+    .main-text {
+      @include responsive(min,768px) {
+        margin: 0 20px;
+      }
+      margin-bottom: 30px;
+      @include responsive(max,575px) {
+        margin-bottom: 20px;
+        * {
+          font-size: $font-16;
+          text-align: justify;
+        }
+      }
+    }
+    .values__parent {
+      @include responsive(min,768px) {
+        margin: 0 20px;
+      }
+      * {
+        font-size: $font-40;
+        line-height: normal;
+        margin-bottom: 12px;
+        font-weight: $fw-600;
+        @include responsive(max,575px) {
+          font-size: $font-20;
+          margin-bottom: 8px !important;
+        }
+      }
+    }
+
+  }
+}

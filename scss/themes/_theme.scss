@@ -1,0 +1,20 @@
+.pt-lg{
+  padding-top: 90px;
+  @include responsive(max,991px) {
+    padding-top: 40px;
+  }
+}
+
+.text-wrapper {
+  @include responsive(min,991px) {
+    margin-#{$s}: 50px;
+  }
+  @include responsive(max,991px) {
+    margin-#{$s}: 20px;
+  }
+}
+
+.clash {
+  height: 15px;
+}
+

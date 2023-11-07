@@ -1,0 +1,51 @@
+/*-----------
+  done-page
+------------*/
+.done-page {
+  padding-top: 150px;
+  .done {
+    display: block;
+    height: 200px;
+  width: 200px;
+  background-color:#68C27A;
+  border-radius: 50%;
+  margin: auto;
+  outline:40px solid #2CA9001A;
+  .tick {
+    stroke-dasharray: 18;
+    stroke-dashoffset: 18;
+    animation: draw 1s forwards ;
+  }
+  }
+  &__head{
+    margin-top: 40px;
+    * {
+      line-height: normal;
+      font-size: $font-40;
+      font-weight: $fw-600;
+    }
+  }
+  &__goHome {
+    a {
+      display: block;
+      margin: 24px auto ;
+      max-width: 300px;
+      @extend %input;
+      background-color: $primary-color;
+      border-color: $black-color;
+      color: $black-color;
+      font-size: $font-18;
+      font-weight: $fw-600;
+    }
+  }
+  &__visit-user {
+    a {
+      color: #313679;
+      text-decoration-line:underline ;
+    }
+  }
+}
+
+@keyframes draw { 
+  to { stroke-dashoffset: 0 } 
+}

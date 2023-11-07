@@ -1,0 +1,21 @@
+#tranding {
+  .tranding-slider {
+    scroll-snap-align: start;
+    position: relative;
+    margin: 50px;
+  }
+}
+.tranding-slide {
+  display: block;
+  @include responsive(min, 992px) {
+    width: 350px;
+    height: 500px;
+  }
+  position: relative;
+}
+.swiper-slide-shadow-left {
+  display: none;
+}
+.swiper-slide-shadow-right {
+  display: none;
+}

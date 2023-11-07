@@ -9,11 +9,11 @@
   .main-bg {
     background-position: bottom;
     @include responsive(max,1003px) {
-      background-image:url(../../images/tab/home1.png) !important;
+      background-image:url(../images/tab/home1.png) !important;
       background-size: contain;
     }
     @include responsive(max,575px) {
-      background-image: url(../../images/home/Vector.svg) !important;
+      background-image: url(../images/home/Vector.svg) !important;
       background-position: bottom left;
       background-size:auto;
     }
@@ -91,7 +91,7 @@
           right: 0;
           bottom: 0px;
           left: 100px;
-          background:url(../../images/home/border.png) ;
+          background:url(../images/home/border.png) ;
           overflow: hidden;
           height: 2px;
         }
@@ -307,7 +307,7 @@
     @include responsive(max, 575px){
       @include static-main-bg(120px, end, $font-18);
       margin-bottom: 30px;
-      background-image: url(../../images/home/services-mob.svg) !important;
+      background-image: url(../images/home/services-mob.svg) !important;
       > .row > [class*="col-"] {
         padding-left: 0;
         h2 {
@@ -646,7 +646,7 @@
         margin-bottom: 20px;
       }
       @include responsive(max, 575px){
-        background-image: url(../../images/home/customer-mob.svg) !important;
+        background-image: url(../images/home/customer-mob.svg) !important;
 
       }
     }

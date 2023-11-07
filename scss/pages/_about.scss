@@ -147,7 +147,7 @@
     @include responsive(max,490px) {
       @include static-main-bg(162px, start, $font-20);
       margin-bottom: 20px !important;
-      background-image: url(../../images/about/values-mob.svg) !important;
+      background-image: url(../images/about/values-mob.svg) !important;
     }
     @include responsive(max,390px) {
       @include static-main-bg(124px, start, $font-20);
@@ -184,7 +184,7 @@
         }
       }
       &::marker {
-        content: url(../../images/icons/bullet5.svg);
+        content: url(../images/icons/bullet5.svg);
         @include responsive(max,575px) {
           position: relative;
           bottom: 10px;
@@ -193,18 +193,18 @@
       }
       &:first-of-type {
         &::marker {
-          content: url(../../images/icons/bullet1.svg);
+          content: url(../images/icons/bullet1.svg);
         }
       }
       &:nth-of-type(2) {
         &::marker {
-          content: url(../../images/icons/bullet2.svg);
+          content: url(../images/icons/bullet2.svg);
 
         }
       }
       &:last-of-type {
         &::marker {
-          content: url(../../images/icons/bullet3.svg);
+          content: url(../images/icons/bullet3.svg);
         }
       }
     }

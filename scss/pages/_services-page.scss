@@ -152,7 +152,7 @@
     }
     &--first {
       @include responsive(max,575px) {
-        background-image:url(../../images/services/serv-mob.svg) !important;
+        background-image:url(../images/services/serv-mob.svg) !important;
       }
     }
 

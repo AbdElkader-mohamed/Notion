@@ -76,23 +76,23 @@ h6 {
 
 @font-face {
   font-family: 'PF Din Text Universal';
-  src: url("../../font/alfont_com_AlFont_com_18630-pfdintextuniversal-thin.otf");
+  src: url("../font/alfont_com_AlFont_com_18630-pfdintextuniversal-thin.otf");
   font-weight: 400; }
 @font-face {
   font-family: 'PF Din Text Universal';
-  src: url("../../font/alfont_com_AlFont_com_18632-pfdintextuniversal-regular-1.otf");
+  src: url("../font/alfont_com_AlFont_com_18632-pfdintextuniversal-regular-1.otf");
   font-weight: 500; }
 @font-face {
   font-family: 'PF Din Text Universal';
-  src: url("../../font/alfont_com_AlFont_com_18633-pfdintextuniversal-medium-1.otf");
+  src: url("../font/alfont_com_AlFont_com_18633-pfdintextuniversal-medium-1.otf");
   font-weight: 600; }
 @font-face {
   font-family: 'PF Din Text Universal';
-  src: url("../../font/alfont_com_AlFont_com_18634-pfdintextuniversal-bold-1.otf");
+  src: url("../font/alfont_com_AlFont_com_18634-pfdintextuniversal-bold-1.otf");
   font-weight: 700; }
 @font-face {
   font-family: 'PF Din Text Universal';
-  src: url("../../font/alfont_com_AlFont_com_18635-pfdintextuniversal-xblack.otf");
+  src: url("../font/alfont_com_AlFont_com_18635-pfdintextuniversal-xblack.otf");
   font-weight: 800; }
 * {
   scroll-behavior: smooth;
@@ -870,11 +870,11 @@ h6 {
   background-position: bottom; }
   @media (max-width: 1003px) {
     .hero .main-bg {
-      background-image: url(../../images/tab/home1.png) !important;
+      background-image: url(../images/tab/home1.png) !important;
       background-size: contain; } }
   @media (max-width: 575px) {
     .hero .main-bg {
-      background-image: url(../../images/home/Vector.svg) !important;
+      background-image: url(../images/home/Vector.svg) !important;
       background-position: bottom left;
       background-size: auto; } }
   @media (max-width: 300px) {
@@ -949,7 +949,7 @@ h6 {
       right: 0;
       bottom: 0px;
       left: 100px;
-      background: url(../../images/home/border.png);
+      background: url(../images/home/border.png);
       overflow: hidden;
       height: 2px; } }
   @media (max-width: 300px) {
@@ -1168,7 +1168,7 @@ h6 {
       -webkit-transform: scaleX(-1);
               transform: scaleX(-1);
       margin-bottom: 30px;
-      background-image: url(../../images/home/services-mob.svg) !important; }
+      background-image: url(../images/home/services-mob.svg) !important; }
       .services__best-company > .row {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
@@ -1532,7 +1532,7 @@ h6 {
 
     @media (max-width: 575px) {
       .customers__wrapper__header {
-        background-image: url(../../images/home/customer-mob.svg) !important; } }
+        background-image: url(../images/home/customer-mob.svg) !important; } }
   .customers__wrapper__body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1964,7 +1964,7 @@ h6 {
           -webkit-transform: scaleX(-1);
                   transform: scaleX(-1);
           margin-bottom: 20px !important;
-          background-image: url(../../images/about/values-mob.svg) !important; }
+          background-image: url(../images/about/values-mob.svg) !important; }
           .about__wrapper.values--wrapper > .row {
             -webkit-box-pack: start;
                 -ms-flex-pack: start;
@@ -2037,18 +2037,18 @@ h6 {
         .about .goals__list li p {
           font-size: 16px; } }
     .about .goals__list li::marker {
-      content: url(../../images/icons/bullet5.svg); }
+      content: url(../images/icons/bullet5.svg); }
       @media (max-width: 575px) {
         .about .goals__list li::marker {
           position: relative;
           bottom: 10px;
           width: 18px; } }
     .about .goals__list li:first-of-type::marker {
-      content: url(../../images/icons/bullet1.svg); }
+      content: url(../images/icons/bullet1.svg); }
     .about .goals__list li:nth-of-type(2)::marker {
-      content: url(../../images/icons/bullet2.svg); }
+      content: url(../images/icons/bullet2.svg); }
     .about .goals__list li:last-of-type::marker {
-      content: url(../../images/icons/bullet3.svg); }
+      content: url(../images/icons/bullet3.svg); }
   @media (min-width: 768px) {
     .about.vision .main-text {
       margin: 0 10px; } }
@@ -2329,7 +2329,7 @@ h6 {
           margin-bottom: 25px !important; } }
     @media (max-width: 575px) {
       .services-page__wrapper--first {
-        background-image: url(../../images/services/serv-mob.svg) !important; } }
+        background-image: url(../images/services/serv-mob.svg) !important; } }
     .services-page__wrapper--second, .services-page__wrapper--third, .services-page__wrapper--sixth {
       min-height: 440px;
       display: -webkit-box;
